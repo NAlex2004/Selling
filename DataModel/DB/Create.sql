@@ -33,6 +33,7 @@ create table Managers
 
 create table Sales
 (
+	Id int not null identity primary key,
 	SaleDate datetime not null,
 	ManagerId int not null,
 	CustomerId int not null,
@@ -46,6 +47,3 @@ create table Sales
 
 create index Ind_CustomerName on Customers(CustomerName)
 create unique index Ind_ProductName on Products(ProductName)
-
-
-

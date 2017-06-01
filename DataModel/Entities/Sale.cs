@@ -10,6 +10,8 @@ namespace NAlex.DataModel.Entities
 {
     public class Sale
     {
+        [Key]
+        public int Id { get; set; }
         [Required]
         public DateTime SaleDate { get; set; }
         public double Total { get; set; }

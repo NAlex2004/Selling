@@ -68,6 +68,7 @@
     <Compile Include="Entities\Manager.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Sale.cs" />
+    <Compile Include="Entities\SalesContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
