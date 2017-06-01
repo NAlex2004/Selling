@@ -8,7 +8,7 @@
     <ProjectGuid>{A5511409-1D79-41A1-B8BE-D725BE9E1566}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataModel</RootNamespace>
+    <RootNamespace>NAlex.DataModel</RootNamespace>
     <AssemblyName>DataModel</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -64,6 +64,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\Manager.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\Sale.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -103,14 +107,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DB\Create.sql" />
-    <Content Include="DB\Sales.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <None Include="DB\Create.sql" />
+    <None Include="DB\Sales.ldf">
       <DependentUpon>Sales.mdf</DependentUpon>
-    </Content>
-    <Content Include="DB\Sales.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </None>
+    <None Include="DB\Sales.mdf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
