@@ -114,6 +114,18 @@
     </None>
     <None Include="DB\Sales.mdf" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="DB\Sales_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Sales.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Selling.DTO\Selling.DTO.csproj">
+      <Project>{6455B589-AE19-478C-B67A-C90C09A24A8B}</Project>
+      <Name>Selling.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

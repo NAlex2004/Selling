@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
+using NAlex.Selling.DTO.Interfaces;
 
 namespace NAlex.DataModel.Entities
 {
-    public class Product
+    public class Product: IProduct
     {
         [Key]
         public int Id { get; set; }

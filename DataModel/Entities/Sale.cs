@@ -5,10 +5,11 @@ using System.Text;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using NAlex.Selling.DTO.Interfaces;
 
 namespace NAlex.DataModel.Entities
 {
-    public class Sale
+    public class Sale: ISale
     {
         [Key]
         public int Id { get; set; }
@@ -26,5 +27,6 @@ namespace NAlex.DataModel.Entities
         public virtual Manager Manager { get; set; }
         public virtual Customer Customer { get; set; }
         public virtual Product Product { get; set; }
+        
     }
 }
