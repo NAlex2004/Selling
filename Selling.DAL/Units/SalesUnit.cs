@@ -30,22 +30,22 @@ namespace NAlex.Selling.DAL.Units
 
         public IRepository<Customer, int> Customers
         {
-            get { throw new NotImplementedException(); }
+            get { return _customers; }
         }
 
         public IRepository<Product, int> Products
         {
-            get { throw new NotImplementedException(); }
+            get { return _products; }
         }
 
         public IRepository<Manager, int> Managers
         {
-            get { throw new NotImplementedException(); }
+            get { return _managers; }
         }
 
         public IRepository<Sale, int> Sales
         {
-            get { throw new NotImplementedException(); }
+            get { return _sales; }
         }
 
         public bool SaveChanges()
@@ -76,7 +76,7 @@ namespace NAlex.Selling.DAL.Units
 
             if (disposing)
             {
-                _context.SaveChanges();
+                SaveChanges();
                 _context.Dispose();
             }
 
