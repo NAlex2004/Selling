@@ -6,13 +6,12 @@ using System.Data.Entity;
 
 namespace NAlex.Selling.DAL.Repositories
 {
-    public abstract class Repository<TEntity, TKey, TContext>: IRepository<TEntity, TKey>
+    public abstract class Repository<TEntity, TKey>: IRepository<TEntity, TKey>
         where TEntity: class
-        where TContext: DbContext
     {
-        private DbContext _context;
+        protected DbContext _context;
 
-        public Repository(TContext context)
+        public Repository(DbContext context)
         {
             if (context == null)
                 throw new ArgumentNullException("context");
