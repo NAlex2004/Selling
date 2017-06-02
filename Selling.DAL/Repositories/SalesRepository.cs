@@ -12,5 +12,11 @@ namespace NAlex.Selling.DAL.Repositories
         public SalesRepository(DbContext context): base(context)
         {
         }
+
+        public override Sale Add(Sale entity)
+        {
+            // или тут все проверять, или SP тут вызывать на добавление
+            return base.Add(entity);
+        }
     }
 }
