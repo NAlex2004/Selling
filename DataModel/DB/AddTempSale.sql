@@ -5,6 +5,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE AddTempSale
+	@SessionId uniqueidentifier,
 	@Date datetime,
 	@ManagerName varchar(100),
 	@CustomerName varchar(255),
@@ -68,9 +69,9 @@ BEGIN
 			select @ProductId = Id 
 			from @IdentityTable
 		end
-
-		insert into tmpSales (SaleDate, ManagerId, CustomerId, ProductId, Total)
-		values (@Date, @ManagerId, @CustomerId, @ProductId, @Total)
+		 
+		insert into tmpSales (SessionId, SaleDate, ManagerId, CustomerId, ProductId, Total)
+		values (@SessionId, @Date, @ManagerId, @CustomerId, @ProductId, @Total)
 
 		COMMIT Tr
 

@@ -45,8 +45,8 @@ create table Sales
 )
 
 create table tmpSales
-(
-	Id int not null identity primary key,
+( 
+	SessionId uniqueidentifier not null primary key,
 	SaleDate datetime not null,
 	ManagerId int not null,
 	CustomerId int not null,
