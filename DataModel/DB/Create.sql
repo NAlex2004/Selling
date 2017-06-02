@@ -44,6 +44,15 @@ create table Sales
 	constraint FK_Manager foreign key (ManagerId) references Managers(Id)
 )
 
+create table tmpSales
+(
+	Id int not null identity primary key,
+	SaleDate datetime not null,
+	ManagerId int not null,
+	CustomerId int not null,
+	ProductId int not null,
+	Total float not null default 0,	
+)
 
 create index Ind_CustomerName on Customers(CustomerName)
 create unique index Ind_ProductName on Products(ProductName)
