@@ -8,7 +8,10 @@ using NAlex.Selling.DTO.Interfaces;
 
 namespace NAlex.Selling.DAL.Repositories
 {
-    public class CustomersRepository: BaseSellingRepository<Customer, int>
+    public class CustomersRepository: Repository<Customer, int>
     {
+        public CustomersRepository(DbContext context): base(context)
+        {
+        }
     }
 }

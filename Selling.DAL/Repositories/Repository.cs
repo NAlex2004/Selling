@@ -70,7 +70,7 @@ namespace NAlex.Selling.DAL.Repositories
             if (entity == null)
                 return false;
 
-            _context.Set<TEntity>().Attach(entity);
+            //_context.Set<TEntity>().Attach(entity);
             _context.Entry<TEntity>(entity).State = EntityState.Modified;
 
             return true;
