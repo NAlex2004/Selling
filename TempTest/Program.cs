@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using NAlex.DataModel.Entities;
 using System.Data.Entity;
+using NAlex.Selling.DAL.Units;
+using NAlex.Selling.DAL.Repositories;
 
 namespace TempTest
 {
@@ -11,10 +13,9 @@ namespace TempTest
     {
         static void Main(string[] args)
         {
-            using (SalesContext context = new SalesContext())
+            using (ISalesUnit unit = new SalesUnit())
             {
-                context.Products.ToList().ForEach(p => Console.WriteLine("{0,-8}{1,-50}{2,10}", p.Id, p.ProductName, p.Price));
-                
+                unit.Products.GetAll().ToList().ForEach(p => Console.WriteLine("{0,-8}{1,-50}{2,10}", p.Id, p.ProductName, p.Price));                
             }
 
             Console.ReadKey();

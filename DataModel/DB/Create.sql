@@ -1,4 +1,4 @@
-/*
+
 create database Sales
 on 
 ( NAME = Sales,
@@ -6,7 +6,7 @@ on
 log on
 ( NAME = Sales_log,
   FILENAME = 'E:\My\Private\CS\Training\Selling\DataModel\DB\Sales.ldf')
-*/  
+go 
 
 use Sales
 go

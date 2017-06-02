@@ -54,12 +54,15 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataModel\DataModel.csproj">
       <Project>{A5511409-1D79-41A1-B8BE-D725BE9E1566}</Project>
       <Name>DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Selling.DAL\Selling.DAL.csproj">
+      <Project>{51A13200-BB23-4256-BA78-128CC66FFFC3}</Project>
+      <Name>Selling.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Selling.DTO\Selling.DTO.csproj">
       <Project>{6455B589-AE19-478C-B67A-C90C09A24A8B}</Project>
