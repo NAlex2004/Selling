@@ -12,7 +12,7 @@ namespace NAlex.Selling.DAL.Repositories
     {
         private DbContext _context;
 
-        public Repository(DbContext context)
+        public Repository(TContext context)
         {
             if (context == null)
                 throw new ArgumentNullException("context");
@@ -20,22 +20,28 @@ namespace NAlex.Selling.DAL.Repositories
             _context = context;
         }
 
-        public TEntity Get(TKey Id)
+        public virtual TEntity Get(TKey Id)
         {
             return _context.Set<TEntity>().Find(Id);
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public virtual IEnumerable<TEntity> GetAll()
         {
             return _context.Set<TEntity>().ToArray();
         }
 
-        public IEnumerable<TEntity> Get(System.Linq.Expressions.Expression<Func<TEntity, bool>> condition)
+        public virtual IEnumerable<TEntity> Get(System.Linq.Expressions.Expression<Func<TEntity, bool>> condition,
+            Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null)
         {
-            return _context.Set<TEntity>().Where(condition).ToArray();
+            var q =  _context.Set<TEntity>().Where(condition);
+            
+            if (orderBy != null)
+                return orderBy(q).ToArray();
+
+            return q.ToArray();
         }
 
-        public TEntity Add(TEntity entity)
+        public virtual TEntity Add(TEntity entity)
         {
             if (entity == null)
                 return null;
@@ -43,7 +49,7 @@ namespace NAlex.Selling.DAL.Repositories
             return _context.Set<TEntity>().Add(entity);
         }
 
-        public TEntity Remove(TEntity entity)
+        public virtual TEntity Remove(TEntity entity)
         {
             if (entity == null)
                 return null;
@@ -51,7 +57,7 @@ namespace NAlex.Selling.DAL.Repositories
             return _context.Set<TEntity>().Remove(entity);
         }
 
-        public TEntity Remove(TKey Id)
+        public virtual TEntity Remove(TKey Id)
         {
             TEntity entity = Get(Id);
             if (entity != null)
@@ -60,7 +66,7 @@ namespace NAlex.Selling.DAL.Repositories
             return null;
         }
 
-        public bool Update(TEntity entity)
+        public virtual bool Update(TEntity entity)
         {
             if (entity == null)
                 return false;
