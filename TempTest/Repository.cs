@@ -76,7 +76,7 @@ namespace TempTest
 
         public bool Update(TEntity item)
         {
-            throw new NotImplementedException();
+
         }
     }
 }

@@ -8,7 +8,7 @@ using NAlex.Selling.DTO.Interfaces;
 
 namespace NAlex.Selling.DAL.Repositories
 {
-    public interface IRepository<TEntity, TKey>
+    public interface IRepository<TEntity, in TKey>
         where TEntity: class
     {
         TEntity Get(TKey Id);
