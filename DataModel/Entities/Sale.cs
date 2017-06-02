@@ -27,6 +27,43 @@ namespace NAlex.DataModel.Entities
         public virtual Manager Manager { get; set; }
         public virtual Customer Customer { get; set; }
         public virtual Product Product { get; set; }
-        
+
+
+
+        IManager ISale.Manager
+        {
+            get
+            {
+                return Manager;
+            }
+            set
+            {
+                
+            }
+        }
+
+        ICustomer ISale.Customer
+        {
+            get
+            {
+                return Customer;
+            }
+            set
+            {
+                
+            }
+        }
+
+        IProduct ISale.Product
+        {
+            get
+            {
+                return Product;
+            }
+            set
+            {
+                
+            }
+        }
     }
 }

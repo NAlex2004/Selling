@@ -11,8 +11,8 @@ namespace NAlex.Selling.DTO.Interfaces
         DateTime SaleDate { get; set; }
         double Total { get; set; }
 
-        int ManagerId { get; set; }
-        int CustomerId { get; set; }
-        int ProductId { get; set; }
+        IManager Manager { get; set; }
+        ICustomer Customer { get; set; }
+        IProduct Product { get; set; }
     }
 }
