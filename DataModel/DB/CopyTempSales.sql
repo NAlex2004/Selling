@@ -91,6 +91,9 @@ BEGIN
 		close Cur
 		deallocate Cur
 
+		delete from TempSales
+		where SessionId = @SessionId
+
 		COMMIT TRANSACTION Tr
 
 		select 0 as ErrorNumber, '' as ErrorMessage
