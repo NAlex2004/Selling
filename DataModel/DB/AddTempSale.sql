@@ -12,6 +12,7 @@ CREATE PROCEDURE AddTempSale
 	@ProductName varchar(255),
 	@Total float = 0,
 	@result int output
+	--@errMsg varchar(100) output
 	-- @result < 0 - insertion	failed
 AS
 BEGIN
@@ -73,13 +74,13 @@ BEGIN
 		insert into tmpSales (SessionId, SaleDate, ManagerId, CustomerId, ProductId, Total)
 		values (@SessionId, @Date, @ManagerId, @CustomerId, @ProductId, @Total)
 
-		COMMIT Tr
+		COMMIT TRANSACTION Tr
 
 		set @result = 0
 
 	END TRY
 	BEGIN CATCH
-		ROLLBACK Tr
+		ROLLBACK TRANSACTION Tr
 	END CATCH
 
 END

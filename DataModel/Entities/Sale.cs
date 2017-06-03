@@ -38,7 +38,9 @@ namespace NAlex.DataModel.Entities
             }
             set
             {
-                
+                Manager man = value as Manager;
+                if (man != null)
+                    Manager = man;
             }
         }
 
@@ -50,7 +52,9 @@ namespace NAlex.DataModel.Entities
             }
             set
             {
-                
+                Customer cust = value as Customer;
+                if (cust != null)
+                    Customer = cust;
             }
         }
 
@@ -62,7 +66,9 @@ namespace NAlex.DataModel.Entities
             }
             set
             {
-                
+                Product prod = value as Product;
+                if (prod != null)
+                    Product = prod;
             }
         }
     }

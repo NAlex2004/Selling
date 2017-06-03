@@ -5,6 +5,7 @@ using System.Text;
 using System.Data.Entity;
 using NAlex.DataModel.Entities;
 using NAlex.Selling.DAL.Repositories;
+using System.Data.SqlClient;
 
 namespace NAlex.Selling.DAL.Units
 {
@@ -17,6 +18,7 @@ namespace NAlex.Selling.DAL.Units
         IRepository<Product, int> _products;
         IRepository<Manager, int> _managers;
         IRepository<Sale, int> _sales;
+        IRepository<TempSale, Guid> _tempSales;
 
         public SalesUnit()
         {
@@ -46,6 +48,24 @@ namespace NAlex.Selling.DAL.Units
         public IRepository<Sale, int> Sales
         {
             get { return _sales; }
+        }
+
+        public IRepository<TempSale, Guid> TempSales
+        {
+            get
+            {
+                return _tempSales;
+            }
+        }
+
+        public SpResult CopyTempSalesToSales(Guid sessionId)
+        {
+            if (sessionId == Guid.Empty)
+                return new SpResult() { ErrorNumber = -1, ErrorMessage = "sessionId cannot be empty." };
+
+            SqlParameter sessionIdParam = new SqlParameter("@SessionId", System.Data.SqlDbType.UniqueIdentifier);
+            sessionIdParam.Value = sessionId;
+            return _context.Database.SqlQuery<SpResult>("exec Sales.dbo.CopyTempSales @SessionId").FirstOrDefault();
         }
 
         public bool SaveChanges()
@@ -82,7 +102,6 @@ namespace NAlex.Selling.DAL.Units
 
             _disposed = true;
         }
-
-        
+                
     }
 }

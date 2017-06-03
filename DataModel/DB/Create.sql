@@ -44,13 +44,13 @@ create table Sales
 	constraint FK_Manager foreign key (ManagerId) references Managers(Id)
 )
 
-create table tmpSales
+create table TempSales
 ( 
 	SessionId uniqueidentifier not null primary key,
 	SaleDate datetime not null,
-	ManagerId int not null,
-	CustomerId int not null,
-	ProductId int not null,
+	ManagerName varchar(100) not null,
+	CustomerName varchar(255) not null,
+	ProductName varchar(255) not null,
 	Total float not null default 0,	
 )
 

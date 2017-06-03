@@ -17,6 +17,7 @@ namespace NAlex.DataModel.Entities
         public DbSet<Product> Products { get; set; }
         public DbSet<Manager> Managers { get; set; }
         public DbSet<Sale> Sales { get; set; }
+        public DbSet<TempSale> TempSales { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
