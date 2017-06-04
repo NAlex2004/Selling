@@ -22,13 +22,9 @@ namespace TempTest
         {
             using (ISalesUnit unit = new SalesUnit())
             {
-                unit.Products.GetAll().ToList().ForEach(p => Console.WriteLine("{0,-8}{1,-50}{2,10}", p.Id, p.ProductName, p.Price));                
+                unit.Products.GetAll().ToList().ForEach(p => Console.WriteLine("{0,-8}{1,-50}{2,10}", p.Id, p.ProductName, p.Price));
 
-            }
-
-            using (DbContext context = new SalesContext())
-            {
-                CustomersDTORepository rep = new CustomersDTORepository(context);
+                var rep = unit.Customers;
 
                 var cust = rep.Get(c => c.CustomerName.Contains("ustomer")).ToList();
                 cust.ForEach(c =>
@@ -42,14 +38,17 @@ namespace TempTest
                     CustomerName = "Added"
                 };
 
-                CustomerDTO edited = rep.Get(1);
+                rep.Add(newCust);
+
+                CustomerDTO edited = rep.Get(2);
                 edited.CustomerName += " Edited";
                 rep.Update(edited);
 
-                context.SaveChanges();
+                unit.SaveChanges();
             }
 
-                Console.ReadKey();
+
+            Console.ReadKey();
         }
     }
 }

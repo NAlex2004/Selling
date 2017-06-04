@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Data.Entity;
 using NAlex.DataModel.Entities;
-using NAlex.Selling.DTO.Interfaces;
+using NAlex.Selling.DTO.Classes;
 
 namespace NAlex.Selling.DAL.Repositories
 {
-    public class ManagersRepository: Repository<Manager, int>
+    public class ManagersRepository: DtoRepository<Manager, ManagerDTO, int>
     {
         public ManagersRepository(DbContext context): base(context)
         {

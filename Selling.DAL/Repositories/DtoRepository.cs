@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
 using AutoMapper;
+using AutoMapper.Mappers;
 using AutoMapper.QueryableExtensions;
-using System.Reflection;
 using System.ComponentModel.DataAnnotations;
 
 namespace NAlex.Selling.DAL.Repositories
@@ -14,7 +13,7 @@ namespace NAlex.Selling.DAL.Repositories
         where TDto : class
         where TEntity: class
     {
-        protected DbContext _context;
+        protected DbContext _context;        
 
         public DtoRepository(DbContext context)
         {
@@ -23,11 +22,8 @@ namespace NAlex.Selling.DAL.Repositories
 
             _context = context;
 
-            Mapper.Initialize(cfg =>
-            {
-                cfg.CreateMap(typeof(TEntity), typeof(TDto));
-                cfg.CreateMap(typeof(TDto), typeof(TEntity));
-            });
+            Mapper.CreateMap<TEntity, TDto>();
+            Mapper.CreateMap<TDto, TEntity>();
         }
 
         public virtual TDto Get(TKey Id)
