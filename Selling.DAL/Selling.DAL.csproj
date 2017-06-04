@@ -58,6 +58,7 @@
     <Compile Include="Repositories\SalesRepository.cs" />
     <Compile Include="Repositories\TempSalesRepository.cs" />
     <Compile Include="Result.cs" />
+    <Compile Include="SellingMapper.cs" />
     <Compile Include="Units\ISalesUnit.cs" />
     <Compile Include="Units\SalesUnit.cs" />
   </ItemGroup>

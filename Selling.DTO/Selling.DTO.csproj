@@ -40,10 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\CustomerDTO.cs" />
+    <Compile Include="Classes\ManagerDTO.cs" />
+    <Compile Include="Classes\ProductDTO.cs" />
+    <Compile Include="Classes\SaleDTO.cs" />
+    <Compile Include="Classes\TempSaleDTO.cs" />
     <Compile Include="Interfaces\IManager.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
     <Compile Include="Interfaces\IProduct.cs" />
     <Compile Include="Interfaces\ISale.cs" />
+    <Compile Include="Interfaces\ITempSale.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

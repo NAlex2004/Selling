@@ -27,17 +27,14 @@ namespace TempTest
 
             using (DbContext context = new SalesContext())
             {
-                SqlParameter input = new SqlParameter("@Input", System.Data.SqlDbType.Int);
-                input.Value = 111;
-                SqlParameter output = new SqlParameter("@OutStr", System.Data.SqlDbType.VarChar, 100);
-                output.Direction = System.Data.ParameterDirection.Output;
-                SqlParameter outInt = new SqlParameter("@OutInt", System.Data.SqlDbType.Int);
-                outInt.Direction = System.Data.ParameterDirection.Output;
-                var res = context.Database.SqlQuery<Result>("exec TestRes @Input, @OutStr output, @OutInt output", input, output, outInt).SingleOrDefault();
-                Console.WriteLine((string)output.Value);
-                Console.WriteLine((int)outInt.Value);
-                Console.WriteLine(res.Id);
-                Console.WriteLine(res.OutMsg);
+                Customer cust = new Customer()
+                {
+                    Id = 1,
+                    CustomerName = "One more Customer!"
+                };
+
+                context.Set<Customer>().Add(cust);
+                context.SaveChanges();
             }
 
                 Console.ReadKey();

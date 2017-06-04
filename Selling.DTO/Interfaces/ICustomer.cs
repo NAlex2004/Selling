@@ -8,6 +8,6 @@ namespace NAlex.Selling.DTO.Interfaces
     public interface ICustomer
     {
         int Id { get; set; }
-        string Name { get; set; }
+        string CustomerName { get; set; }
     }
 }

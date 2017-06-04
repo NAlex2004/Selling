@@ -14,7 +14,7 @@ namespace NAlex.DataModel.Entities
         public int Id { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string CustomerName { get; set; }
 
         public virtual ICollection<Sale> Sales { get; set; }
     }
