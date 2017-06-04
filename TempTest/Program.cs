@@ -7,6 +7,7 @@ using System.Data.Entity;
 using NAlex.Selling.DAL.Units;
 using NAlex.Selling.DAL.Repositories;
 using System.Data.SqlClient;
+using NAlex.Selling.DTO.Classes;
 
 namespace TempTest
 {
@@ -27,13 +28,24 @@ namespace TempTest
 
             using (DbContext context = new SalesContext())
             {
-                Customer cust = new Customer()
+                CustomersDTORepository rep = new CustomersDTORepository(context);
+
+                var cust = rep.Get(c => c.CustomerName.Contains("ustomer")).ToList();
+                cust.ForEach(c =>
                 {
-                    Id = 1,
-                    CustomerName = "One more Customer!"
+                    Console.WriteLine(c.CustomerName);
+                    rep.Remove(c);
+                });
+
+                CustomerDTO newCust = new CustomerDTO()
+                {
+                    CustomerName = "Added"
                 };
 
-                context.Set<Customer>().Add(cust);
+                CustomerDTO edited = rep.Get(1);
+                edited.CustomerName += " Edited";
+                rep.Update(edited);
+
                 context.SaveChanges();
             }
 
