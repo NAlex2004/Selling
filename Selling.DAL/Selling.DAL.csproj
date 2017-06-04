@@ -70,12 +70,10 @@
     <Compile Include="Repositories\DtoRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\ProductsRepository.cs" />
-    <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\ManagersRepository.cs" />
     <Compile Include="Repositories\SalesRepository.cs" />
     <Compile Include="Repositories\TempSalesRepository.cs" />
     <Compile Include="Result.cs" />
-    <Compile Include="SellingMapper.cs" />
     <Compile Include="Units\ISalesUnit.cs" />
     <Compile Include="Units\SalesUnit.cs" />
   </ItemGroup>
