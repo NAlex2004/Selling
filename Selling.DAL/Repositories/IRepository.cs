@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using NAlex.DataModel.Entities;
-using NAlex.Selling.DTO.Interfaces;
 
 namespace NAlex.Selling.DAL.Repositories
 {

@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data.Entity;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using NAlex.Selling.DTO.Interfaces;
 
 namespace NAlex.DataModel.Entities
 {
-    public class Product: IProduct
+    public class Product
     {
         [Key]
         public int Id { get; set; }
