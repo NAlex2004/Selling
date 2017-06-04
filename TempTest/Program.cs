@@ -22,27 +22,47 @@ namespace TempTest
         {
             using (ISalesUnit unit = new SalesUnit())
             {
-                unit.Products.GetAll().ToList().ForEach(p => Console.WriteLine("{0,-8}{1,-50}{2,10}", p.Id, p.ProductName, p.Price));
+                //unit.Products.GetAll().ToList().ForEach(p => Console.WriteLine("{0,-8}{1,-50}{2,10}", p.Id, p.ProductName, p.Price));
 
-                var rep = unit.Customers;
+                //var rep = unit.Customers;
 
-                var cust = rep.Get(c => c.CustomerName.Contains("ustomer")).ToList();
-                cust.ForEach(c =>
+                //var cust = rep.Get(c => c.CustomerName.Contains("ustomer")).ToList();
+                //cust.ForEach(c =>
+                //{
+                //    Console.WriteLine(c.CustomerName);
+                //    rep.Remove(c);
+                //});
+
+                //CustomerDTO newCust = new CustomerDTO()
+                //{
+                //    CustomerName = "Added"
+                //};
+
+                //rep.Add(newCust);
+
+                //CustomerDTO edited = rep.Get(2);
+                //edited.CustomerName += " Edited";
+                //rep.Update(edited);
+
+                ProductDTO prod = unit.Products.Get(1);
+                CustomerDTO customer = unit.Customers.Get(1);
+                ManagerDTO manager = new ManagerDTO()
                 {
-                    Console.WriteLine(c.CustomerName);
-                    rep.Remove(c);
-                });
-
-                CustomerDTO newCust = new CustomerDTO()
-                {
-                    CustomerName = "Added"
+                    LastName = "Пупкин"
                 };
 
-                rep.Add(newCust);
+                //var addedMan = unit.Managers.Add(manager);
 
-                CustomerDTO edited = rep.Get(2);
-                edited.CustomerName += " Edited";
-                rep.Update(edited);
+                SaleDTO sale = new SaleDTO()
+                {
+                    Customer = customer,
+                    Manager = manager,
+                    Product = prod,
+                    SaleDate = DateTime.Now,
+                    Total = 123.65
+                };
+
+                unit.Sales.Add(sale);
 
                 unit.SaveChanges();
             }

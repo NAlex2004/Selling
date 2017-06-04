@@ -52,7 +52,8 @@ namespace NAlex.Selling.DAL.Repositories
             if (entity == null)
                 return null;
             TEntity newEntity = Mapper.Map<TEntity>(entity);
-            return Mapper.Map<TDto>(_context.Set<TEntity>().Add(newEntity));
+            TEntity added = _context.Set<TEntity>().Add(newEntity);
+            return Mapper.Map<TDto>(added);
         }
 
         public virtual TDto Remove(TDto entity)

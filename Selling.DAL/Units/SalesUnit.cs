@@ -72,16 +72,17 @@ namespace NAlex.Selling.DAL.Units
 
         public bool SaveChanges()
         {
-            try
-            {
+            //try
+            //{
                 _context.SaveChanges();
 
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            //    return true;
+            //}
+            //catch
+            //{
+            //    return false;
+            //}
+            return true;
         }
 
         public void Dispose()
