@@ -22,7 +22,7 @@ namespace NAlex.Selling.DTO.Classes
 
         public override int GetHashCode()
         {
-            return  CustomerName.GetHashCode();
+            return string.IsNullOrEmpty(CustomerName) ? 0 : CustomerName.GetHashCode();
         }
     }
 }
