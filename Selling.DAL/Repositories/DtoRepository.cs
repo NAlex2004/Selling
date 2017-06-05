@@ -52,7 +52,11 @@ namespace NAlex.Selling.DAL.Repositories
             if (entity == null)
                 return null;            
 
-            if (_context.Set<TEntity>().Local.AsQueryable().UseAsDataSource().For<TDto>().Where(d => d.Equals(entity)).Any())
+            if (_context.Set<TEntity>()
+                .UseAsDataSource()
+                .For<TDto>()
+                //.Where(d => d.Equals(entity))
+                .Any())
                 return entity;
 
             TEntity newEntity = Mapper.Map<TEntity>(entity);

@@ -25,7 +25,7 @@ namespace NAlex.Selling.DTO.Classes
 
         public override int GetHashCode()
         {
-            return ProductName.GetHashCode();
+            return string.IsNullOrEmpty(ProductName) ? 0 : ProductName.GetHashCode();
         }
     }
 }
