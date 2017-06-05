@@ -44,25 +44,26 @@ namespace TempTest
                 //edited.CustomerName += " Edited";
                 //rep.Update(edited);
 
-                ProductDTO prod = unit.Products.Get(1);
-                CustomerDTO customer = unit.Customers.Get(1);
+                ProductDTO prod = unit.Products.Get(2);
+                CustomerDTO customer = unit.Customers.Get(3);
                 ManagerDTO manager = new ManagerDTO()
                 {
-                    LastName = "Пупкин"
+                    LastName = "Вася"
                 };
 
                 var addedMan = unit.Managers.Add(manager);
+                unit.Managers.Add(manager);
 
-                SaleDTO sale = new SaleDTO()
-                {
-                    Customer = customer,
-                    Manager = manager,
-                    Product = prod,
-                    SaleDate = DateTime.Now,
-                    Total = 123.65
-                };
+                //SaleDTO sale = new SaleDTO()
+                //{
+                //    Customer = customer,
+                //    Manager = manager,
+                //    Product = prod,
+                //    SaleDate = DateTime.Now,
+                //    Total = 13.16
+                //};
 
-                unit.Sales.Add(sale);
+                //unit.Sales.Add(sale);
 
                 unit.SaveChanges();
             }

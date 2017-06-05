@@ -50,10 +50,14 @@ namespace NAlex.Selling.DAL.Repositories
         public virtual TDto Add(TDto entity)
         {
             if (entity == null)
-                return null;
+                return null;            
+
+            if (_context.Set<TEntity>().Local.AsQueryable().UseAsDataSource().For<TDto>().Where(d => d.Equals(entity)).Any())
+                return entity;
+
             TEntity newEntity = Mapper.Map<TEntity>(entity);
-            TEntity added = _context.Set<TEntity>().Add(newEntity);
-            return Mapper.Map<TDto>(added);
+
+            return Mapper.Map<TDto>(_context.Set<TEntity>().Add(newEntity));
         }
 
         public virtual TDto Remove(TDto entity)
