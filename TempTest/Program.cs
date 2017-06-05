@@ -51,7 +51,7 @@ namespace TempTest
                     LastName = "Пупкин"
                 };
 
-                //var addedMan = unit.Managers.Add(manager);
+                var addedMan = unit.Managers.Add(manager);
 
                 SaleDTO sale = new SaleDTO()
                 {

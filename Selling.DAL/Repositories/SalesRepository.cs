@@ -24,28 +24,54 @@ namespace NAlex.Selling.DAL.Repositories
                 var manager = _context.Set<Manager>().Find(entity.Manager.Id);
 
                 var sale = Mapper.Map<Sale>(entity);
+
                 if (customer != null)
                 {
-                    sale.CustomerId = customer.Id;
-                    sale.Customer = null;
-                    _context.Entry(customer).State = EntityState.Modified;
+                    if (customer.Id > 0)
+                    {
+                        sale.CustomerId = customer.Id;
+                        sale.Customer = null;
+                        _context.Entry(customer).State = EntityState.Modified;
+                    }
+                    else
+                    {
+                        _context.Set<Customer>().Remove(customer);
+                    }
+                    
                 }
 
                 if (product != null)
                 {
-                    sale.ProductId = product.Id;
-                    sale.Product = null;
-                    _context.Entry(product).State = EntityState.Modified;
+                    if (product.Id > 0)
+                    {
+                        sale.ProductId = product.Id;
+                        sale.Product = null;
+                        _context.Entry(product).State = EntityState.Modified;
+                    }
+                    else
+                    {
+                        _context.Set<Product>().Remove(product);
+                    }
+                    
                 }
 
                 if (manager != null)
                 {
-                    sale.ManagerId = manager.Id;
-                    sale.Manager = null;
-                    _context.Entry(manager).State = EntityState.Modified;
+                    if (manager.Id > 0)
+                    {
+                        sale.ManagerId = manager.Id;
+                        sale.Manager = null;
+                        _context.Entry(manager).State = EntityState.Modified;
+                    }
+                    else
+                    {
+                        _context.Set<Manager>().Remove(manager);
+                    }                    
                 }
 
-                return Mapper.Map<SaleDTO>(_context.Set<Sale>().Add(sale));
+                var added = _context.Set<Sale>().Add(sale);
+                
+                return Mapper.Map<SaleDTO>(added);
             }
             catch
             {
