@@ -8,6 +8,7 @@ using NAlex.Selling.DAL.Units;
 using NAlex.Selling.DAL.Repositories;
 using System.Data.SqlClient;
 using NAlex.Selling.DTO.Classes;
+using NAlex.Selling.DAL;
 
 namespace TempTest
 {
@@ -22,37 +23,59 @@ namespace TempTest
         {
             using (ISalesUnit unit = new SalesUnit())
             {
-                //unit.Products.GetAll().ToList().ForEach(p => Console.WriteLine("{0,-8}{1,-50}{2,10}", p.Id, p.ProductName, p.Price));
+                Guid guid = Guid.NewGuid();
 
-                //var rep = unit.Customers;
-
-                //var cust = rep.Get(c => c.CustomerName.Contains("ustomer")).ToList();
-                //cust.ForEach(c =>
-                //{
-                //    Console.WriteLine(c.CustomerName);
-                //    rep.Remove(c);
-                //});
-
-                //CustomerDTO newCust = new CustomerDTO()
-                //{
-                //    CustomerName = "Added"
-                //};
-
-                //rep.Add(newCust);
-
-                //CustomerDTO edited = rep.Get(2);
-                //edited.CustomerName += " Edited";
-                //rep.Update(edited);
-
-                ProductDTO prod = unit.Products.Get(2);
-                CustomerDTO customer = unit.Customers.Get(3);
-                ManagerDTO manager = new ManagerDTO()
+                TempSaleDTO tmp = new TempSaleDTO()
                 {
-                    LastName = "Вася"
+                    CustomerName = "Temp sale Customer 1",
+                    ManagerName = "Temp manager 1",
+                    ProductName = "Temp product 1",
+                    SaleDate = DateTime.Now,
+                    SessionId = guid,
+                    Total = 15.22
                 };
 
-                var addedMan = unit.Managers.Add(manager);
-                unit.Managers.Add(manager);
+                TempSaleDTO tmp2 = new TempSaleDTO()
+                {
+                    CustomerName = "Temp sale Customer 2",
+                    ManagerName = "Temp manager 2",
+                    ProductName = "Temp product 2",
+                    SaleDate = DateTime.Now,
+                    SessionId = guid,
+                    Total = 115.13
+                };
+
+                Guid guid2 = Guid.NewGuid();
+
+                TempSaleDTO tmp3 = new TempSaleDTO()
+                {
+                    CustomerName = "Temp sale Customer 3",
+                    ManagerName = "Temp manager 3",
+                    ProductName = "Temp product 3",
+                    SaleDate = DateTime.Now,
+                    SessionId = guid2,
+                    Total = 52.87
+                };
+
+                //unit.TempSales.Add(tmp);
+                //unit.TempSales.Add(tmp2);
+                //unit.TempSales.Add(tmp3);
+                unit.TempSales.AddRange(new[] { tmp, tmp2, tmp3, tmp, tmp2 });
+
+                //ProductDTO prod = new ProductDTO()
+                //{
+                //    ProductName = "Просто гвоздь",
+                //    Price = 0.43
+                //};
+                //CustomerDTO customer = new CustomerDTO()
+                //{
+                //    CustomerName = "Новый покупатель"
+                //};
+                //ManagerDTO manager = new ManagerDTO()
+                //{
+                //    LastName = "Иванов"
+                //};
+
 
                 //SaleDTO sale = new SaleDTO()
                 //{
@@ -66,6 +89,10 @@ namespace TempTest
                 //unit.Sales.Add(sale);
 
                 unit.SaveChanges();
+                SpResult res = unit.CopyTempSalesToSales(guid);
+                Console.WriteLine("{0} : {1}", res.ErrorNumber, res.ErrorMessage);
+                res = unit.CopyTempSalesToSales(guid2);
+                Console.WriteLine("{0} : {1}", res.ErrorNumber, res.ErrorMessage);
             }
 
 

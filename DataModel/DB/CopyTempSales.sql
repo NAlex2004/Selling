@@ -4,7 +4,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE PROCEDURE CopyTempSales
+ALTER PROCEDURE CopyTempSales
 	@SessionId uniqueidentifier
 AS
 BEGIN
@@ -38,6 +38,10 @@ BEGIN
 
 		while @@FETCH_STATUS = 0
 		begin
+			set @ManagerId = 0
+			set @CustomerId = 0
+			set @ProductId = 0
+
 			select @ManagerId = m.Id
 			from Managers m
 			where m.LastName = @ManagerName
@@ -50,7 +54,7 @@ BEGIN
 			from Products p
 			where p.ProductName = @ProductName	
 
-			if (@ManagerId is null)
+			if (@ManagerId = 0)
 			begin
 				insert into Managers (LastName)
 				  output inserted.Id into @IdentityTable
@@ -60,7 +64,7 @@ BEGIN
 				from @IdentityTable
 			end
 
-			if (@CustomerId is null)
+			if (@CustomerId = 0)
 			begin
 				insert into Customers (CustomerName)
 				  output inserted.Id into @IdentityTable
@@ -70,7 +74,7 @@ BEGIN
 				from @IdentityTable
 			end
 
-			if (@ProductId is null)
+			if (@ProductId = 0)
 			begin
 				insert into Products (ProductName, Price)
 				  output inserted.Id into @IdentityTable

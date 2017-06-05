@@ -67,22 +67,12 @@ namespace NAlex.Selling.DAL.Units
 
             SqlParameter sessionIdParam = new SqlParameter("@SessionId", System.Data.SqlDbType.UniqueIdentifier);
             sessionIdParam.Value = sessionId;
-            return _context.Database.SqlQuery<SpResult>("exec Sales.dbo.CopyTempSales @SessionId").FirstOrDefault();
+            return _context.Database.SqlQuery<SpResult>("exec Sales.dbo.CopyTempSales @SessionId", sessionIdParam).FirstOrDefault();
         }
 
-        public bool SaveChanges()
-        {
-            //try
-            //{
-                _context.SaveChanges();
-
-            //    return true;
-            //}
-            //catch
-            //{
-            //    return false;
-            //}
-            return true;
+        public int SaveChanges()
+        {            
+            return _context.SaveChanges();
         }
 
         public void Dispose()

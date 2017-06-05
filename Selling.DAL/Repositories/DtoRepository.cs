@@ -50,14 +50,9 @@ namespace NAlex.Selling.DAL.Repositories
         public virtual TDto Add(TDto entity)
         {
             if (entity == null)
-                return null;            
-
-            if (_context.Set<TEntity>()
-                .UseAsDataSource()
-                .For<TDto>()
-                //.Where(d => d.Equals(entity))
-                .Any())
-                return entity;
+                return null;
+            if (_context.Set<TEntity>().Local.Any(e => Mapper.Map<TDto>(e).Equals(entity)))
+                return entity;            
 
             TEntity newEntity = Mapper.Map<TEntity>(entity);
 
@@ -104,6 +99,15 @@ namespace NAlex.Selling.DAL.Repositories
             _context.Entry<TEntity>(existing).State = EntityState.Modified;
 
             return true;
+        }
+
+        public void AddRange(IEnumerable<TDto> range)
+        {
+            if (range == null)
+                return;
+
+            foreach (TDto item in range)
+                Add(item);
         }
     }
 

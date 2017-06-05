@@ -5,8 +5,10 @@ namespace NAlex.DataModel.Entities
 {
     public class TempSale
     {
-        [Required]
         [Key]
+        [Required]
+        public int Id { get; set; }
+        [Required]
         public Guid SessionId { get; set; }
         [Required]
         public DateTime SaleDate { get; set; }

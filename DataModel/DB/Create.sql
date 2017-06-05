@@ -46,13 +46,16 @@ create table Sales
 
 create table TempSales
 ( 
-	SessionId uniqueidentifier not null primary key,
+	Id int not null identity primary key,
+	SessionId uniqueidentifier not null,
 	SaleDate datetime not null,
 	ManagerName varchar(100) not null,
 	CustomerName varchar(255) not null,
 	ProductName varchar(255) not null,
 	Total float not null default 0,	
 )
+
+create index Ind_SessionId on TempSales(SessionId)
 
 create index Ind_CustomerName on Customers(CustomerName)
 create unique index Ind_ProductName on Products(ProductName)

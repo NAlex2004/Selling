@@ -4,6 +4,7 @@ namespace NAlex.Selling.DTO.Classes
 {
     public class TempSaleDTO: IEquatable<TempSaleDTO>
     {
+        public int Id { get; set; }
         public string CustomerName { get; set; }
         public string ManagerName { get; set; }
         public string ProductName { get; set; }
