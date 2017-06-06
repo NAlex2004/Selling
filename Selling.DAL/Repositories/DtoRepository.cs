@@ -83,14 +83,24 @@ namespace NAlex.Selling.DAL.Repositories
         {
             if (entity == null)
                 return false;
-
+            
             TEntity newEntity = Mapper.Map<TEntity>(entity);
+            TEntity local = _context.Set<TEntity>().Local.FirstOrDefault(e => Mapper.Map<TDto>(e).Equals(entity));
+
+            if (local != null)
+            {
+                _context.Entry<TEntity>(local).CurrentValues.SetValues(newEntity);
+                if (_context.Entry<TEntity>(local).State != EntityState.Added)
+                    _context.Entry<TEntity>(local).State = EntityState.Modified;
+                return true;
+            }
+            
             var props = newEntity.GetType()
                 .GetProperties()
                 .FirstOrDefault(p => p.GetCustomAttributes(typeof(KeyAttribute), false).Any());
             if (props == null)
                 return false;
-
+            
             TEntity existing = _context.Set<TEntity>().Find(props.GetValue(newEntity, null));
             if (existing == null)
                 return false;
