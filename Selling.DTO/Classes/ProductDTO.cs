@@ -14,7 +14,7 @@ namespace NAlex.Selling.DTO.Classes
         public bool Equals(ProductDTO other)
         {
             return other != null
-                ? ProductName == other.ProductName && Price == other.Price
+                ? Id == other.Id && ProductName == other.ProductName && Price == other.Price
                 : false;
         }
 
@@ -25,7 +25,8 @@ namespace NAlex.Selling.DTO.Classes
 
         public override int GetHashCode()
         {
-            return string.IsNullOrEmpty(ProductName) ? 0 : ProductName.GetHashCode();
+            return string.IsNullOrEmpty(ProductName) ? 0 :
+              string.Format("{0}_{1}_{2}", Id, Price, ProductName).GetHashCode();
         }
     }
 }

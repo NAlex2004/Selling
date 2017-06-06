@@ -21,6 +21,7 @@ namespace NAlex.Selling.DTO.Classes
                     && SaleDate.Equals(other.SaleDate)
                     && SessionId.Equals(other.SessionId)
                     && Total.Equals(other.Total)
+                    && Id.Equals(other.Id)
                 : false;
         }
 
@@ -31,7 +32,7 @@ namespace NAlex.Selling.DTO.Classes
 
         public override int GetHashCode()
         {
-            return string.Format("{0}_{1}_{2}_{3}_{4}_{5}", CustomerName, ManagerName, ProductName, SaleDate, SessionId, Total).GetHashCode();
+            return string.Format("{0}_{1}_{2}_{3}_{4}_{5}_{6}", CustomerName, ManagerName, ProductName, SaleDate, SessionId, Total, Id).GetHashCode();
         }
     }
 }

@@ -6,6 +6,7 @@ using AutoMapper;
 using AutoMapper.Mappers;
 using AutoMapper.QueryableExtensions;
 using System.ComponentModel.DataAnnotations;
+using System.Linq.Expressions;
 
 namespace NAlex.Selling.DAL.Repositories
 {
@@ -59,15 +60,31 @@ namespace NAlex.Selling.DAL.Repositories
             return Mapper.Map<TDto>(_context.Set<TEntity>().Add(newEntity));
         }
 
-        public virtual TDto Remove(TDto entity)
+        public virtual void Remove(TDto entity)
         {
             if (entity == null)
-                return null;
+                return;
+
+            var entry = _context.ChangeTracker.Entries<TEntity>().FirstOrDefault(e => Mapper.Map<TDto>(e).Equals(entity));
+            if (entry != null)
+            {
+                entry.State = EntityState.Detached;
+                return;
+            }
+
             TEntity newEntity = Mapper.Map<TEntity>(entity);
             TEntity attached = _context.Set<TEntity>().Attach(newEntity);
             _context.Entry<TEntity>(newEntity).State = EntityState.Deleted;
-            
-            return Mapper.Map<TDto>(_context.Set<TEntity>().Remove(attached));
+
+            //return Mapper.Map<TDto>(_context.Set<TEntity>().Remove(attached));
+        }
+
+        public virtual void Remove(Expression<Func<TDto, bool>> condition)
+        {
+            Expression<Func<TEntity, bool>> exp = Mapper.Map<Expression<Func<TEntity, bool>>>(condition);
+            _context.Set<TEntity>().Where(exp)
+                .ToList()
+                .ForEach(e => _context.Set<TEntity>().Remove(e));
         }
 
         public virtual TDto Remove(TKey Id)
@@ -85,15 +102,6 @@ namespace NAlex.Selling.DAL.Repositories
                 return false;
             
             TEntity newEntity = Mapper.Map<TEntity>(entity);
-            TEntity local = _context.Set<TEntity>().Local.FirstOrDefault(e => Mapper.Map<TDto>(e).Equals(entity));
-
-            if (local != null)
-            {
-                _context.Entry<TEntity>(local).CurrentValues.SetValues(newEntity);
-                if (_context.Entry<TEntity>(local).State != EntityState.Added)
-                    _context.Entry<TEntity>(local).State = EntityState.Modified;
-                return true;
-            }
             
             var props = newEntity.GetType()
                 .GetProperties()
