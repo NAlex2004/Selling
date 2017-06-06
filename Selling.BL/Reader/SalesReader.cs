@@ -39,6 +39,10 @@ namespace NAlex.Selling.BL.Reader
         {
             string line = _reader.ReadLine();
 
+            while (line != null && (line == String.Empty))
+                line = _reader.ReadLine();
+
+
             if (line != null)
             {
                 string[] splitted = line.Trim().Split(',');

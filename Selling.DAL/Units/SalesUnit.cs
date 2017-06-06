@@ -19,7 +19,7 @@ namespace NAlex.Selling.DAL.Units
         IRepository<ProductDTO, int> _products;
         IRepository<ManagerDTO, int> _managers;
         IRepository<SaleDTO, int> _sales;
-        IRepository<TempSaleDTO, Guid> _tempSales;
+        IRepository<TempSaleDTO, int> _tempSales;
 
         public SalesUnit()
         {
@@ -52,7 +52,7 @@ namespace NAlex.Selling.DAL.Units
             get { return _sales; }
         }
 
-        public IRepository<TempSaleDTO, Guid> TempSales
+        public IRepository<TempSaleDTO, int> TempSales
         {
             get
             {
@@ -95,10 +95,11 @@ namespace NAlex.Selling.DAL.Units
             _disposed = true;
         }
 
-
-
+        /// <summary>
+        /// Delete from database
+        /// </summary>        
         public void DeleteTempSales(Guid sessionId)
-        {
+        {            
             SqlParameter sessionParameter = new SqlParameter("@SessionId", sessionId);
             _context.Database.ExecuteSqlCommand("delete from TempSales where SessionId = @SessionId", sessionParameter);
         }

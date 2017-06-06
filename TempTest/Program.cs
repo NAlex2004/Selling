@@ -15,17 +15,41 @@ namespace TempTest
 {    
     class Program
     {
-        static void TestReader()
+        static void TestReader(ISalesUnit unit)
         {
-            
+            Guid session = Guid.NewGuid();
+            try
+            {
+                using (SalesReader reader = new SalesReader("NewManager_18121980.csv"))
+                {                    
+                    TempSaleDTO tempSale;
+                    while ((tempSale = reader.ReadNext()) != null)
+                    {
+                        tempSale.SessionId = session;
+                        unit.TempSales.Add(tempSale);
+                    }
+                }
+
+                unit.SaveChanges();
+            }
+            catch
+            {
+                var sales = unit.TempSales.Get(s => s.SessionId.Equals(session));
+                foreach (var sale in sales)
+                    unit.TempSales.Remove(sale);
+
+
+            }
         }
 
         static void Main(string[] args)
-        {
-            
-
+        {               
             using (ISalesUnit unit = new SalesUnit())
             {
+
+                TestReader(unit);
+                return;
+
                 Guid guid = Guid.NewGuid();
 
                 TempSaleDTO tmp = new TempSaleDTO()

@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NAlex.Selling.DAL.Repositories
 {
-    public class TempSalesRepository : DtoRepository<TempSale, TempSaleDTO, Guid>
+    public class TempSalesRepository : DtoRepository<TempSale, TempSaleDTO, int>
     {
         public TempSalesRepository(DbContext context) : base(context)
         {
