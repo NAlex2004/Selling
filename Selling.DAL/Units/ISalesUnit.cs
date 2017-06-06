@@ -17,6 +17,7 @@ namespace NAlex.Selling.DAL.Units
         IRepository<TempSaleDTO, Guid> TempSales { get; }
 
         SpResult CopyTempSalesToSales(Guid sessionId);
+        void DeleteTempSales(Guid sessionId);
         int SaveChanges();
     }
 }

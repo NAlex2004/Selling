@@ -4,7 +4,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-ALTER PROCEDURE CopyTempSales
+CREATE PROCEDURE CopyTempSales
 	@SessionId uniqueidentifier
 AS
 BEGIN

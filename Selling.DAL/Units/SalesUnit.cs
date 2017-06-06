@@ -94,6 +94,13 @@ namespace NAlex.Selling.DAL.Units
 
             _disposed = true;
         }
-                
+
+
+
+        public void DeleteTempSales(Guid sessionId)
+        {
+            SqlParameter sessionParameter = new SqlParameter("@SessionId", sessionId);
+            _context.Database.ExecuteSqlCommand("delete from TempSales where SessionId = @SessionId", sessionParameter);
+        }
     }
 }

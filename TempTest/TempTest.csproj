@@ -60,6 +60,10 @@
       <Project>{A5511409-1D79-41A1-B8BE-D725BE9E1566}</Project>
       <Name>DataModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Selling.BL\Selling.BL.csproj">
+      <Project>{05FADD6E-BA35-44D3-AE87-308951B79246}</Project>
+      <Name>Selling.BL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Selling.DAL\Selling.DAL.csproj">
       <Project>{51A13200-BB23-4256-BA78-128CC66FFFC3}</Project>
       <Name>Selling.DAL</Name>

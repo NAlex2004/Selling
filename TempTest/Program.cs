@@ -9,18 +9,21 @@ using NAlex.Selling.DAL.Repositories;
 using System.Data.SqlClient;
 using NAlex.Selling.DTO.Classes;
 using NAlex.Selling.DAL;
+using NAlex.Selling.BL.Reader;
 
 namespace TempTest
-{
-    class Result
-    {
-        public int Id { get; set; }
-        public string OutMsg { get; set; }
-    }
+{    
     class Program
     {
+        static void TestReader()
+        {
+            
+        }
+
         static void Main(string[] args)
         {
+            
+
             using (ISalesUnit unit = new SalesUnit())
             {
                 Guid guid = Guid.NewGuid();
@@ -89,10 +92,12 @@ namespace TempTest
                 //unit.Sales.Add(sale);
 
                 unit.SaveChanges();
-                SpResult res = unit.CopyTempSalesToSales(guid);
-                Console.WriteLine("{0} : {1}", res.ErrorNumber, res.ErrorMessage);
-                res = unit.CopyTempSalesToSales(guid2);
-                Console.WriteLine("{0} : {1}", res.ErrorNumber, res.ErrorMessage);
+
+                unit.DeleteTempSales(guid);
+                //SpResult res = unit.CopyTempSalesToSales(guid);
+                //Console.WriteLine("{0} : {1}", res.ErrorNumber, res.ErrorMessage);
+                //res = unit.CopyTempSalesToSales(guid2);
+                //Console.WriteLine("{0} : {1}", res.ErrorNumber, res.ErrorMessage);
             }
 
 
