@@ -15,7 +15,7 @@ namespace NAlex.Selling.DAL.Repositories
         void AddRange(IEnumerable<TEntity> range);
         void Remove(TEntity entity);
         void Remove(Expression<Func<TEntity, bool>> condition);
-        TEntity Remove(TKey Id);
+        void Remove(TKey Id);
         bool Update(TEntity entity);
     }
 }

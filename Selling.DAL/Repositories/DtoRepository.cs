@@ -82,18 +82,19 @@ namespace NAlex.Selling.DAL.Repositories
         public virtual void Remove(Expression<Func<TDto, bool>> condition)
         {
             Expression<Func<TEntity, bool>> exp = Mapper.Map<Expression<Func<TEntity, bool>>>(condition);
+            _context.Set<TEntity>().Local.Where(exp.Compile())
+                .ToList()
+                .ForEach(e => _context.Entry<TEntity>(e).State = EntityState.Detached);
             _context.Set<TEntity>().Where(exp)
                 .ToList()
                 .ForEach(e => _context.Set<TEntity>().Remove(e));
         }
 
-        public virtual TDto Remove(TKey Id)
+        public virtual void Remove(TKey Id)
         {
             TDto entity = Get(Id);
             if (entity != null)
-                return Remove(entity);
-
-            return null;
+                Remove(entity);
         }
 
         public virtual bool Update(TDto entity)
