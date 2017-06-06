@@ -34,11 +34,12 @@ namespace TempTest
             }
             catch
             {
+                // хрен тут локальные есть..
                 var sales = unit.TempSales.Get(s => s.SessionId.Equals(session));
                 foreach (var sale in sales)
                     unit.TempSales.Remove(sale);
 
-
+                unit.SaveChanges();
             }
         }
 
