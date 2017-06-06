@@ -14,7 +14,7 @@ namespace NAlex.Selling.DAL.Units
         IRepository<ProductDTO, int> Products { get; }
         IRepository<ManagerDTO, int> Managers { get; }
         IRepository<SaleDTO, int> Sales { get; }
-        IRepository<TempSaleDTO, Guid> TempSales { get; }
+        IRepository<TempSaleDTO, int> TempSales { get; }
 
         SpResult CopyTempSalesToSales(Guid sessionId);
         void DeleteTempSales(Guid sessionId);
