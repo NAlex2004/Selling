@@ -52,15 +52,18 @@ namespace NAlex.Selling.BL.Reader
                 TempSaleDTO sale = new TempSaleDTO();
                 
                 DateTime saleDate;
-                
-                if (!DateTime.TryParse(splitted[Positions.SaleDate].Trim(), out saleDate))
-                    throw new LineParseException(line);
-
                 double sum;
 
-                if (!double.TryParse(splitted[Positions.Sum].Trim(), System.Globalization.NumberStyles.Number,
-                    System.Globalization.CultureInfo.InvariantCulture, out sum))
-                    throw new LineParseException(line);
+                try
+                {
+                    saleDate = DateTime.Parse(splitted[Positions.SaleDate].Trim());
+                    sum = double.Parse(splitted[Positions.Sum].Trim(), System.Globalization.NumberStyles.Number,
+                        System.Globalization.CultureInfo.InvariantCulture);
+                }
+                catch (Exception e)
+                {
+                    throw new LineParseException(line, e);
+                }
 
                 sale.ManagerName = _managerName;
                 sale.SaleDate = saleDate;

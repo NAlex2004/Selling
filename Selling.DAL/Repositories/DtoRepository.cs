@@ -65,18 +65,16 @@ namespace NAlex.Selling.DAL.Repositories
             if (entity == null)
                 return;
 
-            var entry = _context.ChangeTracker.Entries<TEntity>().FirstOrDefault(e => Mapper.Map<TDto>(e).Equals(entity));
-            if (entry != null)
+            TEntity local = _context.Set<TEntity>().Local.FirstOrDefault(e => Mapper.Map<TDto>(e).Equals(entity));
+            if (local != null)
             {
-                entry.State = EntityState.Detached;
+                _context.Entry<TEntity>(local).State = EntityState.Detached;
                 return;
             }
 
             TEntity newEntity = Mapper.Map<TEntity>(entity);
             TEntity attached = _context.Set<TEntity>().Attach(newEntity);
             _context.Entry<TEntity>(newEntity).State = EntityState.Deleted;
-
-            //return Mapper.Map<TDto>(_context.Set<TEntity>().Remove(attached));
         }
 
         public virtual void Remove(Expression<Func<TDto, bool>> condition)

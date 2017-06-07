@@ -26,7 +26,7 @@ namespace TempTest
                     while ((tempSale = reader.ReadNext()) != null)
                     {
                         tempSale.SessionId = session;
-                        unit.TempSales.Add(tempSale);
+                        unit.TempSales.Add(tempSale);                        
                     }
                 }
 
@@ -45,7 +45,43 @@ namespace TempTest
             using (ISalesUnit unit = new SalesUnit())
             {
 
-                TestReader(unit);
+                //TestReader(unit);
+                //return;
+
+                CustomerDTO cc = new CustomerDTO()
+                {
+                    CustomerName = "AAAA"
+                };
+
+                unit.Customers.Add(cc);
+
+                ProductDTO pp = new ProductDTO()
+                {
+                    Price = 1.1,
+                    ProductName = "2 PPPP"
+                };
+
+                unit.Products.Add(pp);
+
+                ManagerDTO mm = new ManagerDTO()
+                {
+                    LastName = "MMMM"
+                };
+
+                unit.Managers.Add(mm);
+
+                SaleDTO ss = new SaleDTO()
+                {
+                    Manager = mm,
+                    Product = pp,
+                    Customer = cc,
+                    SaleDate = DateTime.Now,
+                    Total = 23.11
+                };
+
+                unit.Sales.Add(ss);
+
+                unit.SaveChanges();
                 return;
 
                 Guid guid = Guid.NewGuid();

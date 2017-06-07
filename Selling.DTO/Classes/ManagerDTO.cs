@@ -12,7 +12,7 @@ namespace NAlex.Selling.DTO.Classes
 
         public bool Equals(ManagerDTO other)
         {
-            return other != null ? Id == other.Id && LastName == other.LastName : false;
+            return other != null ? LastName == other.LastName : false;
         }
 
         public override bool Equals(object obj)
@@ -22,8 +22,7 @@ namespace NAlex.Selling.DTO.Classes
 
         public override int GetHashCode()
         {
-            return string.IsNullOrEmpty(LastName) ? 0 :
-              string.Format("{0}_{1}", Id, LastName).GetHashCode();
+            return string.IsNullOrEmpty(LastName) ? 0 : LastName.GetHashCode();
         }
     }
 }

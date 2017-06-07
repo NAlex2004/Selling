@@ -6,6 +6,8 @@ using NAlex.DataModel.Entities;
 using System.Data.Entity;
 using NAlex.Selling.DTO.Classes;
 using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using System.Linq.Expressions;
 
 namespace NAlex.Selling.DAL.Repositories
 {
@@ -19,54 +21,55 @@ namespace NAlex.Selling.DAL.Repositories
         {
             try
             {
-                var customer = _context.Set<Customer>().Find(entity.Customer.Id);
-                var product = _context.Set<Product>().Find(entity.Product.Id);
-                var manager = _context.Set<Manager>().Find(entity.Manager.Id);
-
                 var sale = Mapper.Map<Sale>(entity);
 
+                // если уже вставляли и не сохраняли
+                if (entity.Customer.Id == 0)
+                {
+                    var cust = _context.Set<Customer>().Local.FirstOrDefault(c => Mapper.Map<CustomerDTO>(c).Equals(entity.Customer));
+                    if (cust != null)
+                        _context.Entry<Customer>(cust).State = EntityState.Detached;
+                }                                                    
+
+                if (entity.Product.Id == 0)
+                {
+                    var prod = _context.Set<Product>().Local.FirstOrDefault(p => Mapper.Map<ProductDTO>(p).Equals(entity.Product));
+                    if (prod != null)
+                        _context.Entry<Product>(prod).State = EntityState.Detached;
+                }
+                
+                if (entity.Manager.Id == 0)
+                {
+                    var man = _context.Set<Manager>().Local.FirstOrDefault(m => Mapper.Map<ManagerDTO>(m).Equals(entity.Manager));
+                    if (man != null)
+                        _context.Entry<Manager>(man).State = EntityState.Detached;
+                }                
+
+                // ищем в базе
+                //var customer = _context.Set<Customer>()
+                //    .UseAsDataSource().For<CustomerDTO>()
+                //    .FirstOrDefault(c => c.Equals(entity.Customer));                
+
+                var customer = _context.Set<Customer>().FirstOrDefault(c => c.CustomerName == entity.Customer.CustomerName);
                 if (customer != null)
                 {
-                    if (customer.Id > 0)
-                    {
-                        sale.CustomerId = customer.Id;
-                        sale.Customer = null;
-                        _context.Entry(customer).State = EntityState.Modified;
-                    }
-                    else
-                    {
-                        _context.Set<Customer>().Remove(customer);
-                    }
-                    
+                    sale.CustomerId = customer.Id;
+                    sale.Customer = null;
                 }
 
+                //var product = _context.Set<Product>().FirstOrDefault(c => Mapper.Map<ProductDTO>(c).Equals(entity.Product));
+                var product = _context.Set<Product>().FirstOrDefault(p => p.ProductName == entity.Product.ProductName);
                 if (product != null)
                 {
-                    if (product.Id > 0)
-                    {
-                        sale.ProductId = product.Id;
-                        sale.Product = null;
-                        _context.Entry(product).State = EntityState.Modified;
-                    }
-                    else
-                    {
-                        _context.Set<Product>().Remove(product);
-                    }
-                    
+                    sale.ProductId = product.Id;
+                    sale.Product = null;
                 }
 
+                var manager = _context.Set<Manager>().FirstOrDefault(m => m.LastName == entity.Manager.LastName);
                 if (manager != null)
                 {
-                    if (manager.Id > 0)
-                    {
-                        sale.ManagerId = manager.Id;
-                        sale.Manager = null;
-                        _context.Entry(manager).State = EntityState.Modified;
-                    }
-                    else
-                    {
-                        _context.Set<Manager>().Remove(manager);
-                    }                    
+                    sale.ManagerId = manager.Id;
+                    sale.Manager = null;
                 }
 
                 var added = _context.Set<Sale>().Add(sale);
