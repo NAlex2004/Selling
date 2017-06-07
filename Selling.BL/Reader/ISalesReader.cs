@@ -9,6 +9,7 @@ namespace NAlex.Selling.BL.Reader
     public interface ISalesReader: IDisposable
     {        
         TempSaleDTO ReadNext();
+        void Open(string filePath);
         void Close();
     }
 }

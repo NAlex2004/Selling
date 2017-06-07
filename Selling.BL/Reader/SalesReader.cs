@@ -21,7 +21,7 @@ namespace NAlex.Selling.BL.Reader
             public static int Sum { get { return 3; } }
         }
 
-        public SalesReader(string filePath)
+        public void Open(string filePath)
         {
             string fileName = Path.GetFileNameWithoutExtension(filePath);
             if (string.IsNullOrEmpty(fileName))
@@ -101,6 +101,6 @@ namespace NAlex.Selling.BL.Reader
 
             _disposed = true;
         }
-
+     
     }
 }

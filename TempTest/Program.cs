@@ -20,8 +20,9 @@ namespace TempTest
             Guid session = Guid.NewGuid();
             try
             {
-                using (SalesReader reader = new SalesReader("NewManager_18121980.csv"))
-                {                    
+                using (SalesReader reader = new SalesReader())
+                {
+                    reader.Open("NewManager_18121980.csv");
                     TempSaleDTO tempSale;
                     while ((tempSale = reader.ReadNext()) != null)
                     {
