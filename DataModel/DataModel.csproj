@@ -110,10 +110,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="DB\Create.sql" />
-    <None Include="DB\Sales.ldf">
-      <DependentUpon>Sales.mdf</DependentUpon>
-    </None>
-    <None Include="DB\Sales.mdf" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DB\CopyTempSales.sql" />
