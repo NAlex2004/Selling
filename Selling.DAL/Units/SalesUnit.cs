@@ -87,8 +87,7 @@ namespace NAlex.Selling.DAL.Units
                 return;
 
             if (disposing)
-            {
-                SaveChanges();
+            {                
                 _context.Dispose();
             }
 
@@ -100,7 +99,8 @@ namespace NAlex.Selling.DAL.Units
         /// </summary>        
         public void DeleteTempSales(Guid sessionId)
         {            
-            SqlParameter sessionParameter = new SqlParameter("@SessionId", sessionId);
+            SqlParameter sessionParameter = new SqlParameter("@SessionId", System.Data.SqlDbType.UniqueIdentifier);
+            sessionParameter.Value = sessionId;
             _context.Database.ExecuteSqlCommand("delete from TempSales where SessionId = @SessionId", sessionParameter);
         }
     }
