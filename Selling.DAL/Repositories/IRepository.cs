@@ -13,8 +13,9 @@ namespace NAlex.Selling.DAL.Repositories
         IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> condition, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null);
         TEntity Add(TEntity entity);
         void AddRange(IEnumerable<TEntity> range);
-        TEntity Remove(TEntity entity);
-        TEntity Remove(TKey Id);
+        void Remove(TEntity entity);
+        void Remove(Expression<Func<TEntity, bool>> condition);
+        void Remove(TKey Id);
         bool Update(TEntity entity);
     }
 }

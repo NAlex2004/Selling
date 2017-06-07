@@ -19,7 +19,7 @@ namespace NAlex.Selling.DTO.Classes
             bool res = Customer != null ? Customer.Equals(other.Customer) : other.Customer == null;
             res &= Manager != null ? Manager.Equals(other.Manager) : other.Manager == null;
             res &= Product != null ? Product.Equals(other.Product) : other.Product == null;
-            res &= SaleDate.Equals(other.SaleDate) && Total.Equals(other.Total);
+            res &= SaleDate.Equals(other.SaleDate) && Total.Equals(other.Total) && Id.Equals(other.Id);
 
             return res;
         }
@@ -39,7 +39,7 @@ namespace NAlex.Selling.DTO.Classes
                 code ^= Manager.GetHashCode();
             if (Product != null)
                 code ^= Product.GetHashCode();
-            code ^= SaleDate.GetHashCode() ^ Total.GetHashCode();
+            code ^= SaleDate.GetHashCode() ^ Total.GetHashCode() ^ Id.GetHashCode();
 
             return code;
         }

@@ -53,18 +53,19 @@ namespace NAlex.Selling.BL.Reader
                 
                 DateTime saleDate;
                 
-                if (!DateTime.TryParse(splitted[Positions.SaleDate], out saleDate))
+                if (!DateTime.TryParse(splitted[Positions.SaleDate].Trim(), out saleDate))
                     throw new LineParseException(line);
 
                 double sum;
 
-                if (!double.TryParse(splitted[Positions.Sum], out sum))
+                if (!double.TryParse(splitted[Positions.Sum].Trim(), System.Globalization.NumberStyles.Number,
+                    System.Globalization.CultureInfo.InvariantCulture, out sum))
                     throw new LineParseException(line);
 
                 sale.ManagerName = _managerName;
                 sale.SaleDate = saleDate;
-                sale.ProductName = splitted[Positions.Product];
-                sale.CustomerName = splitted[Positions.Customer];
+                sale.ProductName = splitted[Positions.Product].Trim();
+                sale.CustomerName = splitted[Positions.Customer].Trim();
                 sale.Total = sum;
 
                 return sale;
