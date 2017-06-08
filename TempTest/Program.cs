@@ -26,6 +26,7 @@ namespace TempTest
         static string notParsedDir = ConfigurationManager.AppSettings["notParsedDirectory"];
         static string logDir = ConfigurationManager.AppSettings["logDir"];
         static string filePattern = ConfigurationManager.AppSettings["filePattern"];
+        static string logFile;
 
         static void TestReader(ISalesUnit unit)
         {
@@ -54,9 +55,8 @@ namespace TempTest
         }
 
         static void Main(string[] args)
-        {               
-            
-
+        {
+            logFile = Path.Combine(logDir, "log.txt");
             FileSystemWatcher watcher = new FileSystemWatcher(dir, filePattern);
             watcher.NotifyFilter = NotifyFilters.FileName;
             watcher.IncludeSubdirectories = false;
@@ -69,7 +69,7 @@ namespace TempTest
             Console.ReadKey();
 
             watcher.Created -= watcher_Created;
-
+            
             watcher.Dispose();
         }
 
@@ -77,47 +77,67 @@ namespace TempTest
         {
             Console.WriteLine(e.ChangeType);
             Console.WriteLine(Path.GetFullPath(e.FullPath));
+            FileTaskParams par = new FileTaskParams()
+            {
+                FilePath = Path.GetFullPath(e.FullPath),
+                LogFile = logFile,
+                ParsedDir = parsedDir,
+                NotParsedDir = notParsedDir,
+                ParamFactory = paramFactory
+            };
+     
+            Task.Factory.StartNew( 
+                SaleOperator.ProcessFile
+                //(o) =>
+                //{
+                //    string path = (string)o;
+                //    ReadResult res = SaleOperator.ReadFileToDatabase(path, paramFactory);
+                //    if (!res.HasError)
+                //    {
+                //        try
+                //        {
+                //            File.Copy(path, parsedDir + Path.DirectorySeparatorChar + Path.GetFileName(path), true);
+                //            File.Delete(path);
+                //        }
+                //        catch (Exception ex)
+                //        {
+                //            SaleOperator.WriteLog(logFile, ex.Message);
+                //        }
 
-            Task.Factory.StartNew((o) =>
-                {
-                    string path = (string)o;
-                    string error;
-                    bool res = SaleOperator.ReadFileToDatabase(path, paramFactory, out error);
-                    if (res)
-                    {
-                        try
-                        {
-                            File.Copy(path, parsedDir + Path.DirectorySeparatorChar + Path.GetFileName(path), true);
-                            File.Delete(path);
-                        }
-                        catch (Exception ex)
-                        {
+                //        SaleOperator.WriteLog(logFile, "Parsed:");
+                //        SaleOperator.WriteLog(logFile, path);
+                //        Console.WriteLine("Parsed:");
+                //        Console.WriteLine(path);
+                //        Console.WriteLine();
+                //    }
+                //    else
+                //    {
+                //        if (!res.IsIOError)
+                //        {
+                //            try
+                //            {
+                //                File.Copy(path, notParsedDir + Path.DirectorySeparatorChar + Path.GetFileName(path), true);
+                //                File.Delete(path);
+                //            }
+                //            catch (Exception ex)
+                //            {
+                //                SaleOperator.WriteLog(logFile, ex.Message);
+                //            }
+                //        }
+                        
 
-                        }
-
-                        Console.WriteLine("Parsed:");
-                        Console.WriteLine(path);
-                        Console.WriteLine();
-                    }
-                    else
-                    {
-                        try
-                        {
-                            File.Copy(path, notParsedDir + Path.DirectorySeparatorChar + Path.GetFileName(path), true);
-                            File.Delete(path);
-                        }
-                        catch (Exception ex)
-                        {
-
-                        }
-
-                        Console.WriteLine("Not Parsed:");
-                        Console.WriteLine(path);
-                        Console.WriteLine(error);
-                        Console.WriteLine();
-                    }
-                }
-                , Path.GetFullPath(e.FullPath));
+                //        SaleOperator.WriteLog(logFile, "NOT PARSED:");
+                //        SaleOperator.WriteLog(logFile, path);
+                //        SaleOperator.WriteLog(logFile, res.Message);
+                //        Console.WriteLine("Not Parsed:");
+                //        Console.WriteLine(path);
+                //        Console.WriteLine(res.Message);
+                //        Console.WriteLine();
+                //    }
+                //}
+                //, Path.GetFullPath(e.FullPath)
+                , par
+                );
         }
     }
 }

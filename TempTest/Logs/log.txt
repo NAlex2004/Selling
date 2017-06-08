@@ -1,0 +1,729 @@
+[08.06.2017 10:02:48]: NOT PARSED:
+[08.06.2017 10:02:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:02:48]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 10:02:48]: 
+
+[08.06.2017 10:02:48]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager 2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:03:50]: NOT PARSED:
+[08.06.2017 10:12:24]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:12:24]: NOT PARSED:
+[08.06.2017 10:12:24]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:12:24]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:12:24]: 
+
+[08.06.2017 10:12:24]: Parsed:
+[08.06.2017 10:12:24]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:12:24]: 
+
+[08.06.2017 10:12:24]: Parsed:
+[08.06.2017 10:12:24]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager 2_18121980.csv
+[08.06.2017 10:12:24]: 
+
+[08.06.2017 10:12:24]: Parsed:
+[08.06.2017 10:12:24]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:12:24]: 
+
+[08.06.2017 10:12:24]: Parsed:
+[08.06.2017 10:12:24]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:12:24]: 
+
+[08.06.2017 10:12:25]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv' не найден.
+[08.06.2017 10:12:25]: NOT PARSED:
+[08.06.2017 10:12:25]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:12:25]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv' не найден.
+[08.06.2017 10:12:25]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv' не найден.
+[08.06.2017 10:12:25]: NOT PARSED:
+[08.06.2017 10:12:25]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager 2_18121980.csv' не найден.
+[08.06.2017 10:12:25]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:12:25]: NOT PARSED:
+[08.06.2017 10:12:25]: 
+
+[08.06.2017 10:12:25]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:12:25]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager 2_18121980.csv
+[08.06.2017 10:12:25]: 
+
+[08.06.2017 10:12:25]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager 2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:12:25]: 
+
+[08.06.2017 10:12:25]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:12:25]: NOT PARSED:
+[08.06.2017 10:12:25]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:12:25]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:12:25]: 
+
+[08.06.2017 10:12:25]: NOT PARSED:
+[08.06.2017 10:12:25]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:12:25]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 10:12:25]: 
+
+[08.06.2017 10:12:44]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:12:44]: NOT PARSED:
+[08.06.2017 10:12:44]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:12:44]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:12:44]: 
+
+[08.06.2017 10:12:44]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:12:44]: NOT PARSED:
+[08.06.2017 10:12:44]: Parsed:
+[08.06.2017 10:12:44]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:12:44]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:12:44]: NOT PARSED:
+[08.06.2017 10:12:44]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:12:44]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 10:12:44]: 
+
+[08.06.2017 10:12:44]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:12:44]: 
+
+[08.06.2017 10:12:44]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager 2_18121980.csv
+[08.06.2017 10:12:44]: 
+
+[08.06.2017 10:12:44]: Parsed:
+[08.06.2017 10:12:44]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:12:44]: 
+
+[08.06.2017 10:12:44]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager 2_18121980.csv' не найден.
+[08.06.2017 10:12:44]: NOT PARSED:
+[08.06.2017 10:12:44]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager 2_18121980.csv
+[08.06.2017 10:12:44]: NOT PARSED:
+[08.06.2017 10:12:44]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:12:44]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 10:12:44]: 
+
+[08.06.2017 10:12:44]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager 2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:12:44]: 
+
+[08.06.2017 10:12:44]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:12:44]: NOT PARSED:
+[08.06.2017 10:12:44]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:12:44]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:12:44]: 
+
+[08.06.2017 10:12:44]: Parsed:
+[08.06.2017 10:12:44]: Parsed:
+[08.06.2017 10:12:44]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:12:44]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:12:44]: 
+
+[08.06.2017 10:12:44]: 
+
+[08.06.2017 10:15:02]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:15:02]: NOT PARSED:
+[08.06.2017 10:15:02]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:15:02]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:15:02]: 
+
+[08.06.2017 10:15:02]: NOT PARSED:
+[08.06.2017 10:15:02]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:15:02]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 10:15:02]: 
+
+[08.06.2017 10:15:03]: Parsed:
+[08.06.2017 10:15:03]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 10:15:03]: 
+
+[08.06.2017 10:15:03]: Parsed:
+[08.06.2017 10:15:03]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:15:03]: 
+
+[08.06.2017 10:15:03]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv' не найден.
+[08.06.2017 10:15:03]: NOT PARSED:
+[08.06.2017 10:15:03]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:15:03]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv' не найден.
+[08.06.2017 10:15:03]: 
+
+[08.06.2017 10:15:03]: Parsed:
+[08.06.2017 10:15:03]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:15:03]: 
+
+[08.06.2017 10:15:03]: Parsed:
+[08.06.2017 10:15:03]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:15:03]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv' не найден.
+[08.06.2017 10:15:03]: 
+
+[08.06.2017 10:15:03]: Parsed:
+[08.06.2017 10:15:03]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:15:03]: 
+
+[08.06.2017 10:15:03]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:15:03]: Parsed:
+[08.06.2017 10:15:03]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:15:03]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv' не найден.
+[08.06.2017 10:15:03]: 
+
+[08.06.2017 10:15:03]: Parsed:
+[08.06.2017 10:15:03]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 10:15:03]: 
+
+[08.06.2017 10:15:06]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:15:06]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv' не найден.
+[08.06.2017 10:15:06]: NOT PARSED:
+[08.06.2017 10:15:06]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:15:06]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv' не найден.
+[08.06.2017 10:15:06]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv' не найден.
+[08.06.2017 10:15:06]: NOT PARSED:
+[08.06.2017 10:15:06]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv' не найден.
+[08.06.2017 10:15:06]: NOT PARSED:
+[08.06.2017 10:15:06]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv' не найден.
+[08.06.2017 10:15:06]: NOT PARSED:
+[08.06.2017 10:15:06]: 
+
+[08.06.2017 10:15:06]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:15:06]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 10:15:06]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv' не найден.
+[08.06.2017 10:15:06]: NOT PARSED:
+[08.06.2017 10:15:06]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:15:06]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:15:06]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv' не найден.
+[08.06.2017 10:15:06]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv' не найден.
+[08.06.2017 10:15:06]: 
+
+[08.06.2017 10:15:06]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:15:06]: 
+
+[08.06.2017 10:15:06]: 
+
+[08.06.2017 10:15:06]: 
+
+[08.06.2017 10:16:57]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:16:57]: NOT PARSED:
+[08.06.2017 10:16:57]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:16:57]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:16:57]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:16:57]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:16:57]: NOT PARSED:
+[08.06.2017 10:16:57]: 
+
+[08.06.2017 10:16:57]: NOT PARSED:
+[08.06.2017 10:16:57]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 10:16:57]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:16:57]: 
+
+[08.06.2017 10:16:57]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:16:57]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:16:57]: 
+
+[08.06.2017 10:16:57]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:16:57]: NOT PARSED:
+[08.06.2017 10:16:57]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:16:57]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:16:57]: 
+
+[08.06.2017 10:16:57]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:16:57]: NOT PARSED:
+[08.06.2017 10:16:57]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:16:57]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:16:57]: 
+
+[08.06.2017 10:16:57]: NOT PARSED:
+[08.06.2017 10:16:57]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 10:16:57]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:16:57]: 
+
+[08.06.2017 10:16:57]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv' не найден.
+[08.06.2017 10:16:57]: Parsed:
+[08.06.2017 10:16:57]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 10:16:57]: 
+
+[08.06.2017 10:16:57]: NOT PARSED:
+[08.06.2017 10:16:57]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:16:57]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:16:57]: 
+
+[08.06.2017 10:16:57]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv' не найден.
+[08.06.2017 10:16:57]: NOT PARSED:
+[08.06.2017 10:16:57]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:16:57]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 10:16:57]: 
+
+[08.06.2017 10:16:57]: Parsed:
+[08.06.2017 10:16:57]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:16:57]: 
+
+[08.06.2017 10:16:57]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:16:57]: NOT PARSED:
+[08.06.2017 10:16:57]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:16:57]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:16:57]: 
+
+[08.06.2017 10:16:57]: Parsed:
+[08.06.2017 10:16:57]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:16:57]: 
+
+[08.06.2017 10:16:57]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:16:57]: NOT PARSED:
+[08.06.2017 10:16:57]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:16:57]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:16:57]: 
+
+[08.06.2017 10:16:57]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:16:57]: NOT PARSED:
+[08.06.2017 10:16:57]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:16:57]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:16:57]: 
+
+[08.06.2017 10:16:57]: Parsed:
+[08.06.2017 10:16:57]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:16:57]: 
+
+[08.06.2017 10:18:59]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:18:59]: NOT PARSED:
+[08.06.2017 10:18:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 10:18:59]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:18:59]: 
+
+[08.06.2017 10:18:59]: NOT PARSED:
+[08.06.2017 10:18:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:18:59]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 10:18:59]: 
+
+[08.06.2017 10:18:59]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:18:59]: NOT PARSED:
+[08.06.2017 10:18:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:18:59]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:18:59]: 
+
+[08.06.2017 10:18:59]: Parsed:
+[08.06.2017 10:18:59]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv' не найден.
+[08.06.2017 10:18:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 10:18:59]: 
+
+[08.06.2017 10:18:59]: NOT PARSED:
+[08.06.2017 10:18:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:18:59]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:18:59]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 10:18:59]: 
+
+[08.06.2017 10:18:59]: Parsed:
+[08.06.2017 10:18:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:18:59]: 
+
+[08.06.2017 10:18:59]: Parsed:
+[08.06.2017 10:18:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:18:59]: 
+
+[08.06.2017 10:18:59]: Parsed:
+[08.06.2017 10:18:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:18:59]: 
+
+[08.06.2017 10:18:59]: Parsed:
+[08.06.2017 10:18:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:18:59]: 
+
+[08.06.2017 10:18:59]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:18:59]: Parsed:
+[08.06.2017 10:18:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:18:59]: 
+
+[08.06.2017 10:18:59]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv' не найден.
+[08.06.2017 10:18:59]: NOT PARSED:
+[08.06.2017 10:18:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:18:59]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:18:59]: 
+
+[08.06.2017 10:18:59]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv' не найден.
+[08.06.2017 10:18:59]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv' не найден.
+[08.06.2017 10:18:59]: NOT PARSED:
+[08.06.2017 10:18:59]: NOT PARSED:
+[08.06.2017 10:18:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:18:59]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv' не найден.
+[08.06.2017 10:18:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 10:18:59]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv' не найден.
+[08.06.2017 10:18:59]: 
+
+[08.06.2017 10:18:59]: 
+
+[08.06.2017 10:18:59]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv' не найден.
+[08.06.2017 10:18:59]: NOT PARSED:
+[08.06.2017 10:18:59]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:18:59]: NOT PARSED:
+[08.06.2017 10:18:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:18:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:18:59]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv' не найден.
+[08.06.2017 10:18:59]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:18:59]: 
+
+[08.06.2017 10:18:59]: 
+
+[08.06.2017 10:23:26]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:23:26]: NOT PARSED:
+[08.06.2017 10:23:26]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:23:26]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:23:26]: 
+
+[08.06.2017 10:23:26]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:23:26]: NOT PARSED:
+[08.06.2017 10:23:26]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 10:23:26]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:23:26]: 
+
+[08.06.2017 10:23:26]: NOT PARSED:
+[08.06.2017 10:23:26]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:23:26]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 10:23:26]: 
+
+[08.06.2017 10:23:26]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv' не найден.
+[08.06.2017 10:23:26]: NOT PARSED:
+[08.06.2017 10:23:26]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:23:26]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 10:23:26]: 
+
+[08.06.2017 10:23:26]: NOT PARSED:
+[08.06.2017 10:23:26]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:23:26]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:23:26]: 
+
+[08.06.2017 10:23:26]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv' не найден.
+[08.06.2017 10:23:26]: NOT PARSED:
+[08.06.2017 10:23:26]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:23:26]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv' не найден.
+[08.06.2017 10:23:26]: 
+
+[08.06.2017 10:23:26]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv' не найден.
+[08.06.2017 10:23:26]: Parsed:
+[08.06.2017 10:23:26]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:23:26]: 
+
+[08.06.2017 10:23:26]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:23:26]: NOT PARSED:
+[08.06.2017 10:23:26]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:23:26]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:23:26]: 
+
+[08.06.2017 10:23:26]: NOT PARSED:
+[08.06.2017 10:23:26]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:23:26]: NOT PARSED:
+[08.06.2017 10:23:26]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:23:26]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:23:26]: Parsed:
+[08.06.2017 10:23:26]: Parsed:
+[08.06.2017 10:23:26]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv' не найден.
+[08.06.2017 10:23:26]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:23:26]: 
+
+[08.06.2017 10:23:26]: Parsed:
+[08.06.2017 10:23:26]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:23:26]: 
+
+[08.06.2017 10:23:26]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv' не найден.
+[08.06.2017 10:23:26]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:23:26]: 
+
+[08.06.2017 10:23:26]: Parsed:
+[08.06.2017 10:23:26]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 10:23:26]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 10:23:26]: 
+
+[08.06.2017 10:23:26]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:23:26]: 
+
+[08.06.2017 10:23:26]: 
+
+[08.06.2017 10:23:26]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:23:26]: NOT PARSED:
+[08.06.2017 10:23:26]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:23:26]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:23:26]: 
+
+[08.06.2017 10:58:52]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:58:52]: NOT PARSED:
+[08.06.2017 10:58:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:58:52]: System.IO.IOException: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   в NAlex.Selling.BL.Reader.SalesReader.Open(String filePath) в E:\My\Private\CS\Training\Selling\Selling.BL\Reader\SalesReader.cs:строка 34
+   в NAlex.Selling.BL.SaleOperator.ReadFileToDatabase(String filePath, IOperatorParamsFactory paramFactory, String& errorMessage) в E:\My\Private\CS\Training\Selling\Selling.BL\SaleOperator.cs:строка 31 - Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:58:52]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:58:52]: NOT PARSED:
+[08.06.2017 10:58:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 10:58:52]: System.IO.IOException: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   в NAlex.Selling.BL.Reader.SalesReader.Open(String filePath) в E:\My\Private\CS\Training\Selling\Selling.BL\Reader\SalesReader.cs:строка 34
+   в NAlex.Selling.BL.SaleOperator.ReadFileToDatabase(String filePath, IOperatorParamsFactory paramFactory, String& errorMessage) в E:\My\Private\CS\Training\Selling\Selling.BL\SaleOperator.cs:строка 31 - Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:58:52]: NOT PARSED:
+[08.06.2017 10:58:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:58:52]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 10:58:52]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:58:52]: NOT PARSED:
+[08.06.2017 10:58:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:58:52]: System.IO.IOException: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   в NAlex.Selling.BL.Reader.SalesReader.Open(String filePath) в E:\My\Private\CS\Training\Selling\Selling.BL\Reader\SalesReader.cs:строка 34
+   в NAlex.Selling.BL.SaleOperator.ReadFileToDatabase(String filePath, IOperatorParamsFactory paramFactory, String& errorMessage) в E:\My\Private\CS\Training\Selling\Selling.BL\SaleOperator.cs:строка 31 - Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:58:52]: NOT PARSED:
+[08.06.2017 10:58:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:58:52]: System.IO.IOException: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   в NAlex.Selling.BL.Reader.SalesReader.Open(String filePath) в E:\My\Private\CS\Training\Selling\Selling.BL\Reader\SalesReader.cs:строка 34
+   в NAlex.Selling.BL.SaleOperator.ReadFileToDatabase(String filePath, IOperatorParamsFactory paramFactory, String& errorMessage) в E:\My\Private\CS\Training\Selling\Selling.BL\SaleOperator.cs:строка 31 - Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:58:52]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv' не найден.
+[08.06.2017 10:58:52]: Parsed:
+[08.06.2017 10:58:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:58:52]: Parsed:
+[08.06.2017 10:58:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 10:58:52]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:58:52]: NOT PARSED:
+[08.06.2017 10:58:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:58:52]: Parsed:
+[08.06.2017 10:58:52]: System.IO.IOException: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   в NAlex.Selling.BL.Reader.SalesReader.Open(String filePath) в E:\My\Private\CS\Training\Selling\Selling.BL\Reader\SalesReader.cs:строка 34
+   в NAlex.Selling.BL.SaleOperator.ReadFileToDatabase(String filePath, IOperatorParamsFactory paramFactory, String& errorMessage) в E:\My\Private\CS\Training\Selling\Selling.BL\SaleOperator.cs:строка 31 - Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:58:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:58:52]: Parsed:
+[08.06.2017 10:58:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:58:56]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv' не найден.
+[08.06.2017 10:58:56]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv' не найден.
+[08.06.2017 10:58:56]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv' не найден.
+[08.06.2017 10:58:56]: NOT PARSED:
+[08.06.2017 10:58:56]: NOT PARSED:
+[08.06.2017 10:58:56]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 10:58:56]: NOT PARSED:
+[08.06.2017 10:58:56]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv' не найден.
+[08.06.2017 10:58:56]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 10:58:56]: System.IO.IOException: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   в NAlex.Selling.BL.Reader.SalesReader.Open(String filePath) в E:\My\Private\CS\Training\Selling\Selling.BL\Reader\SalesReader.cs:строка 34
+   в NAlex.Selling.BL.SaleOperator.ReadFileToDatabase(String filePath, IOperatorParamsFactory paramFactory, String& errorMessage) в E:\My\Private\CS\Training\Selling\Selling.BL\SaleOperator.cs:строка 31 - Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:58:56]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:58:56]: System.IO.FileNotFoundException: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv' не найден.
+Имя файла: "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv"
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   в NAlex.Selling.BL.Reader.SalesReader.Open(String filePath) в E:\My\Private\CS\Training\Selling\Selling.BL\Reader\SalesReader.cs:строка 34
+   в NAlex.Selling.BL.SaleOperator.ReadFileToDatabase(String filePath, IOperatorParamsFactory paramFactory, String& errorMessage) в E:\My\Private\CS\Training\Selling\Selling.BL\SaleOperator.cs:строка 31 - Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv' не найден.
+[08.06.2017 10:58:56]: NOT PARSED:
+[08.06.2017 10:58:56]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 10:58:56]: System.IO.IOException: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   в NAlex.Selling.BL.Reader.SalesReader.Open(String filePath) в E:\My\Private\CS\Training\Selling\Selling.BL\Reader\SalesReader.cs:строка 34
+   в NAlex.Selling.BL.SaleOperator.ReadFileToDatabase(String filePath, IOperatorParamsFactory paramFactory, String& errorMessage) в E:\My\Private\CS\Training\Selling\Selling.BL\SaleOperator.cs:строка 31 - Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 10:58:56]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 10:58:56]: NOT PARSED:
+[08.06.2017 10:58:56]: System.IO.FileNotFoundException: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+Имя файла: "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv"
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   в NAlex.Selling.BL.Reader.SalesReader.Open(String filePath) в E:\My\Private\CS\Training\Selling\Selling.BL\Reader\SalesReader.cs:строка 34
+   в NAlex.Selling.BL.SaleOperator.ReadFileToDatabase(String filePath, IOperatorParamsFactory paramFactory, String& errorMessage) в E:\My\Private\CS\Training\Selling\Selling.BL\SaleOperator.cs:строка 31 - Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 10:58:56]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 10:58:56]: System.IO.IOException: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   в NAlex.Selling.BL.Reader.SalesReader.Open(String filePath) в E:\My\Private\CS\Training\Selling\Selling.BL\Reader\SalesReader.cs:строка 34
+   в NAlex.Selling.BL.SaleOperator.ReadFileToDatabase(String filePath, IOperatorParamsFactory paramFactory, String& errorMessage) в E:\My\Private\CS\Training\Selling\Selling.BL\SaleOperator.cs:строка 31 - Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 11:19:42]: NOT PARSED:
+[08.06.2017 11:19:42]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 11:19:42]: NOT PARSED:
+[08.06.2017 11:19:42]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 11:19:42]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 11:19:42]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 11:19:43]: NOT PARSED:
+[08.06.2017 11:19:43]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 11:19:43]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 11:19:43]: NOT PARSED:
+[08.06.2017 11:19:43]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 11:19:43]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 11:19:43]: Parsed:
+[08.06.2017 11:19:43]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 11:19:43]: NOT PARSED:
+[08.06.2017 11:19:43]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 11:19:43]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 11:19:43]: NOT PARSED:
+[08.06.2017 11:19:43]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 11:19:43]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 11:19:43]: Parsed:
+[08.06.2017 11:19:43]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 11:19:43]: Parsed:
+[08.06.2017 11:19:43]: Parsed:
+[08.06.2017 11:19:43]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 11:19:43]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 11:19:46]: NOT PARSED:
+[08.06.2017 11:19:46]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 11:19:46]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 11:19:46]: NOT PARSED:
+[08.06.2017 11:19:46]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 11:19:46]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 11:19:46]: NOT PARSED:
+[08.06.2017 11:19:46]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 11:19:46]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv' не найден.
+[08.06.2017 11:19:46]: NOT PARSED:
+[08.06.2017 11:19:46]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 11:19:46]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 11:19:47]: NOT PARSED:
+[08.06.2017 11:19:47]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 11:19:47]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 12:24:47]: NOT PARSED:
+[08.06.2017 12:24:47]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 12:24:47]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:24:47]: NOT PARSED:
+[08.06.2017 12:24:47]: NOT PARSED:
+[08.06.2017 12:24:47]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 12:24:47]: NOT PARSED:
+[08.06.2017 12:24:47]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:24:47]: NOT PARSED:
+[08.06.2017 12:24:47]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 12:24:47]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 12:24:47]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 12:24:47]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:24:47]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:24:47]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:24:47]: NOT PARSED:
+[08.06.2017 12:24:47]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 12:24:47]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 12:24:48]: Parsed:
+[08.06.2017 12:24:48]: Parsed:
+[08.06.2017 12:24:48]: Parsed:
+[08.06.2017 12:24:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 12:24:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 12:24:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 12:24:48]: Parsed:
+[08.06.2017 12:24:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 12:24:48]: NOT PARSED:
+[08.06.2017 12:24:48]: NOT PARSED:
+[08.06.2017 12:24:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 12:24:48]: NOT PARSED:
+[08.06.2017 12:24:48]: NOT PARSED:
+[08.06.2017 12:24:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 12:24:48]: NOT PARSED:
+[08.06.2017 12:24:48]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:24:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 12:24:48]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:24:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 12:24:48]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:24:48]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:24:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 12:24:48]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:25:22]: NOT PARSED:
+[08.06.2017 12:25:22]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 12:25:22]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:25:22]: NOT PARSED:
+[08.06.2017 12:25:22]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 12:25:22]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:25:22]: NOT PARSED:
+[08.06.2017 12:25:22]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 12:25:22]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:25:22]: Parsed:
+[08.06.2017 12:25:22]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 12:25:22]: NOT PARSED:
+[08.06.2017 12:25:22]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 12:25:22]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:25:22]: NOT PARSED:
+[08.06.2017 12:25:22]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 12:25:22]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:25:22]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:25:22]: NOT PARSED:
+[08.06.2017 12:25:22]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 12:25:22]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 12:25:22]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:25:22]: Parsed:
+[08.06.2017 12:25:22]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 12:25:22]: NOT PARSED:
+[08.06.2017 12:25:22]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 12:25:22]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:25:22]: Parsed:
+[08.06.2017 12:25:22]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 12:25:22]: Parsed:
+[08.06.2017 12:25:22]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 12:25:22]: NOT PARSED:
+[08.06.2017 12:25:22]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 12:25:22]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 12:25:22]: NOT PARSED:
+[08.06.2017 12:25:22]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 12:25:22]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv' не найден.
+[08.06.2017 12:25:22]: NOT PARSED:
+[08.06.2017 12:25:22]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 12:25:22]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 12:25:23]: Parsed:
+[08.06.2017 12:25:23]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 12:25:48]: NOT PARSED:
+[08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 12:25:48]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:25:48]: NOT PARSED:
+[08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 12:25:48]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:25:48]: NOT PARSED:
+[08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 12:25:48]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 12:25:48]: NOT PARSED:
+[08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 12:25:48]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:25:48]: Parsed:
+[08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 12:25:48]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:25:48]: Parsed:
+[08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 12:25:48]: NOT PARSED:
+[08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 12:25:48]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:25:48]: NOT PARSED:
+[08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 12:25:48]: Процесс не может получить доступ к файлу "E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv", так как этот файл используется другим процессом.
+[08.06.2017 12:25:48]: Parsed:
+[08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 12:25:48]: NOT PARSED:
+[08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 12:25:48]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv' не найден.
+[08.06.2017 12:25:48]: Parsed:
+[08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 12:25:48]: NOT PARSED:
+[08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 12:25:48]: Parsed:
+[08.06.2017 12:25:48]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv' не найден.
+[08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 12:25:48]: NOT PARSED:
+[08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 12:25:48]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv' не найден.
+[08.06.2017 12:25:48]: NOT PARSED:
+[08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 12:25:48]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv' не найден.

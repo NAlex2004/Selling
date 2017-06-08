@@ -6,15 +6,41 @@ using NAlex.Selling.BL.Reader;
 using NAlex.Selling.DTO.Classes;
 using NAlex.Selling.DAL.Repositories;
 using NAlex.Selling.DAL.Units;
+using System.Threading;
+using System.IO;
+using System.Configuration;
 
 namespace NAlex.Selling.BL
 {
+    public struct ReadResult
+    {
+        public bool HasError;
+        public string Message;
+        public bool IsIOError;
+    }
+
+    public class FileTaskParams
+    {
+        public IOperatorParamsFactory ParamFactory;
+        public string FilePath;
+        public string ParsedDir;
+        public string NotParsedDir;
+        public string LogFile;
+    }
+
+
     public static class SaleOperator
     {
-        public static bool ReadFileToDatabase(string filePath, IOperatorParamsFactory paramFactory, out string errorMessage)
+        static Mutex mutex = new Mutex(false, "LogMutex");
+
+        public static ReadResult ReadFileToDatabase(string filePath, IOperatorParamsFactory paramFactory)
         {
-            errorMessage = "";
-            bool res = true;
+            ReadResult res = new ReadResult()
+            {
+                HasError = false,
+                IsIOError = false,
+                Message = ""
+            };
 
             using (var unit = paramFactory.CreateUnit())
             {
@@ -26,7 +52,7 @@ namespace NAlex.Selling.BL
                     {
                         reader.Open(filePath);
                         int i = 0;
-                        TempSaleDTO sale;                        
+                        TempSaleDTO sale;
 
                         while ((sale = reader.ReadNext()) != null)
                         {
@@ -42,17 +68,18 @@ namespace NAlex.Selling.BL
                 }
                 catch (LineParseException lineEx)
                 {
-                    errorMessage = lineEx.Message + Environment.NewLine + "Line:  " + lineEx.Line + Environment.NewLine
+                    res.Message = lineEx.Message + Environment.NewLine + "Line:  " + lineEx.Line + Environment.NewLine
                         + "Reason: " + lineEx.InnerException.Message;
-                    res = false;
+                    res.HasError = true;
                 }
                 catch (Exception e)
                 {
-                    errorMessage = e.Message;
-                    res = false;
+                    res.Message = e.Message;
+                    res.HasError = true;
+                    res.IsIOError = true;
                 }
 
-                if (res)
+                if (!res.HasError)
                 {
                     try
                     {
@@ -60,12 +87,12 @@ namespace NAlex.Selling.BL
                     }
                     catch (Exception e)
                     {
-                        res = false;
-                        errorMessage = "Data not copied for SessionId " + sessionId + e.Message;
+                        res.HasError = true;
+                        res.Message = "Data not copied for SessionId " + sessionId + e.Message;
                     }
                 }
 
-                if (!res)
+                if (res.HasError)
                     unit.DeleteTempSales(sessionId);
             }
 
@@ -74,6 +101,58 @@ namespace NAlex.Selling.BL
 
         public static void WriteLog(string filePath, string message)
         {
+            mutex.WaitOne();
+            //using (FileStream fs = new FileStream(filePath, FileMode.Append, FileAccess.Write, FileShare.ReadWrite))
+            using (StreamWriter writer = new StreamWriter(filePath, true))
+            {
+                writer.WriteLine("[{0}]: {1}", DateTime.Now, message);
+            }
+
+            mutex.ReleaseMutex();
+        }
+
+        public static void ProcessFile(object fileTaskParams)
+        {
+            FileTaskParams taskParams = (FileTaskParams)fileTaskParams;
+
+            ReadResult res = SaleOperator.ReadFileToDatabase(taskParams.FilePath, taskParams.ParamFactory);
+            if (!res.HasError)
+            {
+                try
+                {
+                    File.Copy(taskParams.FilePath,
+                        Path.Combine(taskParams.ParsedDir, Path.GetFileName(taskParams.FilePath)), true);
+                    File.Delete(taskParams.FilePath);
+                }
+                catch (Exception ex)
+                {
+                    SaleOperator.WriteLog(taskParams.LogFile, ex.Message);
+                }
+
+                SaleOperator.WriteLog(taskParams.LogFile, "Parsed:");
+                SaleOperator.WriteLog(taskParams.LogFile, taskParams.FilePath);
+            }
+            else
+            {
+                if (!res.IsIOError)
+                {
+                    try
+                    {
+                        File.Copy(taskParams.FilePath,
+                            Path.Combine(taskParams.NotParsedDir, Path.GetFileName(taskParams.FilePath)), true);
+                        File.Delete(taskParams.FilePath);
+                    }
+                    catch (Exception ex)
+                    {
+                        SaleOperator.WriteLog(taskParams.LogFile, ex.Message);
+                    }
+                }
+
+
+                SaleOperator.WriteLog(taskParams.LogFile, "NOT PARSED:");
+                SaleOperator.WriteLog(taskParams.LogFile, taskParams.FilePath);
+                SaleOperator.WriteLog(taskParams.LogFile, res.Message);
+            }
 
         }
     }
