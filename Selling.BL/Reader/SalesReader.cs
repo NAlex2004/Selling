@@ -36,7 +36,7 @@ namespace NAlex.Selling.BL.Reader
         }
 
         public TempSaleDTO ReadNext()
-        {
+        {            
             string line = _reader.ReadLine();
 
             while (line != null && (line == String.Empty))

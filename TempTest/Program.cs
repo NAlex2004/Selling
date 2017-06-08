@@ -66,11 +66,24 @@ namespace TempTest
             watcher.EnableRaisingEvents = true;
 
             Console.WriteLine("any key to stop.");
+
+            ProcessExistingFiles();
+
             Console.ReadKey();
 
             watcher.Created -= watcher_Created;
             
             watcher.Dispose();
+        }
+
+        static void ProcessExistingFiles()
+        {
+            var fileNames = Directory.EnumerateFiles(dir, filePattern, SearchOption.TopDirectoryOnly);
+            foreach (string fileName in fileNames)
+            {
+                FileSystemEventArgs e = new FileSystemEventArgs(WatcherChangeTypes.Created, dir, Path.GetFileName(fileName));
+                watcher_Created(null, e);
+            }
         }
 
         static void watcher_Created(object sender, FileSystemEventArgs e)

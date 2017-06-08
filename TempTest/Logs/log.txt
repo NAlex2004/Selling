@@ -727,3 +727,29 @@ Reason: Данная строка не распознана как действ�
 [08.06.2017 12:25:48]: NOT PARSED:
 [08.06.2017 12:25:48]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
 [08.06.2017 12:25:48]: Файл 'E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv' не найден.
+[08.06.2017 14:35:00]: NOT PARSED:
+[08.06.2017 14:35:00]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager2_18121980.csv
+[08.06.2017 14:35:00]: Line cannot be parsed..
+Line:  01.01.a2017, Fifth line customer, test product 2, 124ff
+Reason: Данная строка не распознана как действительное значение DateTime. Обнаружено неизвестное слово, начинающееся с индекса 6.
+[08.06.2017 14:35:00]: Parsed:
+[08.06.2017 14:35:00]: Parsed:
+[08.06.2017 14:35:00]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_18121980.csv
+[08.06.2017 14:35:00]: E:\My\Private\CS\Training\Selling\TempTest\CSV\New Manager2_11121980.csv
+[08.06.2017 14:35:00]: Parsed:
+[08.06.2017 14:35:00]: E:\My\Private\CS\Training\Selling\TempTest\CSV\TheNewManager_19121980.csv
+[08.06.2017 14:35:00]: Parsed:
+[08.06.2017 14:35:00]: E:\My\Private\CS\Training\Selling\TempTest\CSV\NewManager_18121980.csv
+[08.06.2017 14:35:56]: NOT PARSED:
+[08.06.2017 14:35:56]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Сидоров_456Error.csv
+[08.06.2017 14:35:56]: Line cannot be parsed..
+Line:  48.12.2015, �� �������, ��������, dd21.00
+Reason: Строка не распознана как действительное значение DateTime.
+[08.06.2017 14:37:16]: Parsed:
+[08.06.2017 14:37:16]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Иванов_123.csv
+[08.06.2017 14:41:37]: Parsed:
+[08.06.2017 14:41:37]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Сидоров_123.csv
+[08.06.2017 14:43:10]: Parsed:
+[08.06.2017 14:43:10]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Сидоров_123.csv
+[08.06.2017 14:44:59]: Parsed:
+[08.06.2017 14:44:59]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Сидоров_123.csv
