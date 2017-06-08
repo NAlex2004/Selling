@@ -42,7 +42,7 @@ namespace NAlex.Selling.BL
                 }
                 catch (LineParseException lineEx)
                 {
-                    errorMessage = lineEx.Message + ". Line:  " + lineEx.Line + Environment.NewLine
+                    errorMessage = lineEx.Message + Environment.NewLine + "Line:  " + lineEx.Line + Environment.NewLine
                         + "Reason: " + lineEx.InnerException.Message;
                     res = false;
                 }
@@ -61,7 +61,7 @@ namespace NAlex.Selling.BL
                     catch (Exception e)
                     {
                         res = false;
-                        errorMessage = e.Message;
+                        errorMessage = "Data not copied for SessionId " + sessionId + e.Message;
                     }
                 }
 
@@ -70,6 +70,11 @@ namespace NAlex.Selling.BL
             }
 
             return res;
+        }
+
+        public static void WriteLog(string filePath, string message)
+        {
+
         }
     }
 }

@@ -23,6 +23,16 @@ BEGIN
 
 	BEGIN TRANSACTION Tr
 
+	-- locks until we finish job..
+	select top 1 Id
+	from Managers with (tablockx, holdlock)
+	
+	select top 1 Id
+	from Customers with (tablockx, holdlock)
+	
+	select top 1 Id
+	from Products with (tablockx, holdlock)
+
 	BEGIN TRY
 
 		declare Cur cursor fast_forward
