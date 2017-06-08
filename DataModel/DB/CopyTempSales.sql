@@ -4,7 +4,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE PROCEDURE CopyTempSales
+create PROCEDURE CopyTempSales
 	@SessionId uniqueidentifier
 AS
 BEGIN
@@ -20,19 +20,21 @@ BEGIN
 	declare @CustomerId int
 	declare @ProductId int
 	declare @IdentityTable table (Id int)
-
+	
 	BEGIN TRANSACTION Tr
 
 	-- locks until we finish job..
-	select top 1 Id
+	select top 1 @ManagerId = Id
 	from Managers with (tablockx, holdlock)
 	
-	select top 1 Id
+	select top 1 @ManagerId = Id
 	from Customers with (tablockx, holdlock)
 	
-	select top 1 Id
+	select top 1 @ManagerId = Id
 	from Products with (tablockx, holdlock)
 
+	set @ManagerId = 0
+	
 	BEGIN TRY
 
 		declare Cur cursor fast_forward
@@ -101,10 +103,10 @@ BEGIN
 			fetch next from Cur
 			into @SaleDate, @ManagerName, @CustomerName, @ProductName, @Total
 		end
-
+	
 		close Cur
-		deallocate Cur
-
+		deallocate Cur	
+		
 		delete from TempSales
 		where SessionId = @SessionId
 
@@ -113,9 +115,14 @@ BEGIN
 		select 0 as ErrorNumber, '' as ErrorMessage
 	END TRY
 	BEGIN CATCH		
-		ROLLBACK TRANSACTION Tr
+		close Cur
+		deallocate Cur
+		
+		ROLLBACK TRANSACTION Tr				
+		
 		select ERROR_NUMBER() as ErrorNumber, ERROR_MESSAGE() as ErrorMessage
 	END CATCH
+		
 
 END
 GO

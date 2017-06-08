@@ -99,58 +99,7 @@ namespace TempTest
                 ParamFactory = paramFactory
             };
      
-            Task.Factory.StartNew( 
-                SaleOperator.ProcessFile
-                //(o) =>
-                //{
-                //    string path = (string)o;
-                //    ReadResult res = SaleOperator.ReadFileToDatabase(path, paramFactory);
-                //    if (!res.HasError)
-                //    {
-                //        try
-                //        {
-                //            File.Copy(path, parsedDir + Path.DirectorySeparatorChar + Path.GetFileName(path), true);
-                //            File.Delete(path);
-                //        }
-                //        catch (Exception ex)
-                //        {
-                //            SaleOperator.WriteLog(logFile, ex.Message);
-                //        }
-
-                //        SaleOperator.WriteLog(logFile, "Parsed:");
-                //        SaleOperator.WriteLog(logFile, path);
-                //        Console.WriteLine("Parsed:");
-                //        Console.WriteLine(path);
-                //        Console.WriteLine();
-                //    }
-                //    else
-                //    {
-                //        if (!res.IsIOError)
-                //        {
-                //            try
-                //            {
-                //                File.Copy(path, notParsedDir + Path.DirectorySeparatorChar + Path.GetFileName(path), true);
-                //                File.Delete(path);
-                //            }
-                //            catch (Exception ex)
-                //            {
-                //                SaleOperator.WriteLog(logFile, ex.Message);
-                //            }
-                //        }
-                        
-
-                //        SaleOperator.WriteLog(logFile, "NOT PARSED:");
-                //        SaleOperator.WriteLog(logFile, path);
-                //        SaleOperator.WriteLog(logFile, res.Message);
-                //        Console.WriteLine("Not Parsed:");
-                //        Console.WriteLine(path);
-                //        Console.WriteLine(res.Message);
-                //        Console.WriteLine();
-                //    }
-                //}
-                //, Path.GetFullPath(e.FullPath)
-                , par
-                );
+            Task.Factory.StartNew(SaleOperator.ProcessFile, par);
         }
     }
 }

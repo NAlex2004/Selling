@@ -7,7 +7,7 @@ namespace NAlex.Selling.DAL
 {
     public struct SpResult
     {
-        public int ErrorNumber;
-        public string ErrorMessage;
+        public int ErrorNumber { get; set; }
+        public string ErrorMessage { get; set; }
     }
 }

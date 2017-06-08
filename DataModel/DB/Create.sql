@@ -41,8 +41,12 @@ create table Sales
 	Total float not null default 0,
 	constraint FK_Customer foreign key (CustomerID) references Customers(Id),
 	constraint FK_Product foreign key (ProductID) references Products(Id),
-	constraint FK_Manager foreign key (ManagerId) references Managers(Id)
+	constraint FK_Manager foreign key (ManagerId) references Managers(Id),
+	
+	constraint Un_Sale unique(SaleDate, ManagerId, CustomerId, ProductId, Total)
 )
+
+
 
 create table TempSales
 ( 

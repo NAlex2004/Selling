@@ -9,6 +9,7 @@ using NAlex.Selling.DAL.Units;
 using System.Threading;
 using System.IO;
 using System.Configuration;
+using NAlex.Selling.DAL;
 
 namespace NAlex.Selling.BL
 {
@@ -83,12 +84,19 @@ namespace NAlex.Selling.BL
                 {
                     try
                     {
-                        unit.CopyTempSalesToSales(sessionId);
+                        SpResult spRes = unit.CopyTempSalesToSales(sessionId);
+                        if (spRes.ErrorNumber != 0)
+                        {
+                            res.HasError = true;
+                            res.Message = "Data not copied for file " + Path.GetFileName(filePath) + " ."
+                                + Environment.NewLine + spRes.ErrorMessage;
+                        }
                     }
                     catch (Exception e)
                     {
                         res.HasError = true;
-                        res.Message = "Data not copied for SessionId " + sessionId + e.Message;
+                        res.Message = "Data not copied for file " + Path.GetFileName(filePath) + ". "
+                             + Environment.NewLine + e.Message;
                     }
                 }
 
@@ -134,6 +142,10 @@ namespace NAlex.Selling.BL
             }
             else
             {
+                SaleOperator.WriteLog(taskParams.LogFile, "NOT PARSED:");
+                SaleOperator.WriteLog(taskParams.LogFile, taskParams.FilePath);
+                SaleOperator.WriteLog(taskParams.LogFile, res.Message);
+
                 if (!res.IsIOError)
                 {
                     try
@@ -146,12 +158,7 @@ namespace NAlex.Selling.BL
                     {
                         SaleOperator.WriteLog(taskParams.LogFile, ex.Message);
                     }
-                }
-
-
-                SaleOperator.WriteLog(taskParams.LogFile, "NOT PARSED:");
-                SaleOperator.WriteLog(taskParams.LogFile, taskParams.FilePath);
-                SaleOperator.WriteLog(taskParams.LogFile, res.Message);
+                }                
             }
 
         }
