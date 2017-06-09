@@ -29,3 +29,5 @@ _ReSharper*/
 $tf*/
 *.ldf
 *.mdf
+Logs/
+CSV/
