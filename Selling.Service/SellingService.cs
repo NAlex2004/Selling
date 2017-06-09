@@ -32,15 +32,13 @@ namespace NAlex.Selling.Service
 
         protected override void OnStart(string[] args)
         {
-            EventLog.Source = ServiceName;
-            EventLog.Log = "Application";
+            this.EventLog.Source = ServiceName;
+            this.EventLog.Log = "Application";
 
-            EventLog.BeginInit();
-            if (!EventLog.SourceExists(EventLog.Source))
+            if (!EventLog.SourceExists(this.EventLog.Source))
             {
-                EventLog.CreateEventSource(EventLog.Source, EventLog.Log);
+                EventLog.CreateEventSource(this.EventLog.Source, this.EventLog.Log);
             }
-            EventLog.EndInit();
 
             try
             {
