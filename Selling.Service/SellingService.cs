@@ -32,14 +32,32 @@ namespace NAlex.Selling.Service
 
         protected override void OnStart(string[] args)
         {
-            if (!Directory.Exists(dir))
-                Directory.CreateDirectory(dir);
-            if (!Directory.Exists(parsedDir))
-                Directory.CreateDirectory(parsedDir);
-            if (!Directory.Exists(notParsedDir))
-                Directory.CreateDirectory(notParsedDir);
-            if (!Directory.Exists(logDir))
-                Directory.CreateDirectory(logDir);
+            EventLog.Source = ServiceName;
+            EventLog.Log = "Application";
+
+            EventLog.BeginInit();
+            if (!EventLog.SourceExists(EventLog.Source))
+            {
+                EventLog.CreateEventSource(EventLog.Source, EventLog.Log);
+            }
+            EventLog.EndInit();
+
+            try
+            {
+                if (!Directory.Exists(dir))
+                    Directory.CreateDirectory(dir);
+                if (!Directory.Exists(parsedDir))
+                    Directory.CreateDirectory(parsedDir);
+                if (!Directory.Exists(notParsedDir))
+                    Directory.CreateDirectory(notParsedDir);
+                if (!Directory.Exists(logDir))
+                    Directory.CreateDirectory(logDir);
+            }
+            catch (Exception e)
+            {
+                EventLog.WriteEntry("Error: " + e.Message);
+                throw;
+            }
 
             watcher = new FileSystemWatcher(dir, filePattern);
             watcher.NotifyFilter = NotifyFilters.FileName;
