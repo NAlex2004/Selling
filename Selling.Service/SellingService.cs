@@ -14,8 +14,7 @@ using System.Threading.Tasks;
 namespace NAlex.Selling.Service
 {
     public partial class SellingService : ServiceBase
-    {
-        static IOperatorParamsFactory paramFactory = new OperatorParamsFactory(int.MaxValue);
+    {        
         static string dir = ConfigurationManager.AppSettings["directoryPath"];
         static string parsedDir = ConfigurationManager.AppSettings["parsedDirectory"];
         static string notParsedDir = ConfigurationManager.AppSettings["notParsedDirectory"];
@@ -92,11 +91,10 @@ namespace NAlex.Selling.Service
         {
             FileTaskParams par = new FileTaskParams()
             {
-                FilePath = Path.GetFullPath(e.FullPath),
                 LogFile = logFile,
                 ParsedDir = parsedDir,
                 NotParsedDir = notParsedDir,
-                ParamFactory = paramFactory
+                ParamFactory = new OperatorParamsFactory(Path.GetFullPath(e.FullPath))
             };
 
             Task.Factory.StartNew(SaleOperator.ProcessFile, par);

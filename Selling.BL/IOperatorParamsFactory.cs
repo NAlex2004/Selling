@@ -12,5 +12,6 @@ namespace NAlex.Selling.BL
         ISalesReader CreateReader();
         ISalesUnit CreateUnit();
         int RecordsPerPass { get; }
+        string Source { get; }
     }
 }

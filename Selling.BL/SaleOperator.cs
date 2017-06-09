@@ -23,7 +23,6 @@ namespace NAlex.Selling.BL
     public class FileTaskParams
     {
         public IOperatorParamsFactory ParamFactory;
-        public string FilePath;
         public string ParsedDir;
         public string NotParsedDir;
         public string LogFile;
@@ -34,7 +33,7 @@ namespace NAlex.Selling.BL
     {
         static Mutex mutex = new Mutex(false, "LogMutex");
 
-        public static ReadResult ReadFileToDatabase(string filePath, IOperatorParamsFactory paramFactory)
+        public static ReadResult ReadToDatabase(IOperatorParamsFactory paramFactory)
         {
             ReadResult res = new ReadResult()
             {
@@ -51,7 +50,6 @@ namespace NAlex.Selling.BL
                 {
                     using (var reader = paramFactory.CreateReader())
                     {
-                        reader.Open(filePath);
                         int i = 0;
                         TempSaleDTO sale;
 
@@ -88,14 +86,14 @@ namespace NAlex.Selling.BL
                         if (spRes.ErrorNumber != 0)
                         {
                             res.HasError = true;
-                            res.Message = "Data not copied for file " + Path.GetFileName(filePath) + " ."
+                            res.Message = "Data not copied for source " + paramFactory.Source + " ."
                                 + Environment.NewLine + spRes.ErrorMessage;
                         }
                     }
                     catch (Exception e)
                     {
                         res.HasError = true;
-                        res.Message = "Data not copied for file " + Path.GetFileName(filePath) + ". "
+                        res.Message = "Data not copied for source " + paramFactory.Source + ". "
                              + Environment.NewLine + e.Message;
                     }
                 }
@@ -110,7 +108,7 @@ namespace NAlex.Selling.BL
         public static void WriteLog(string filePath, string message)
         {
             mutex.WaitOne();
-            //using (FileStream fs = new FileStream(filePath, FileMode.Append, FileAccess.Write, FileShare.ReadWrite))
+
             using (StreamWriter writer = new StreamWriter(filePath, true))
             {
                 writer.WriteLine("[{0}]: {1}", DateTime.Now, message);
@@ -123,14 +121,14 @@ namespace NAlex.Selling.BL
         {
             FileTaskParams taskParams = (FileTaskParams)fileTaskParams;
 
-            ReadResult res = SaleOperator.ReadFileToDatabase(taskParams.FilePath, taskParams.ParamFactory);
+            ReadResult res = SaleOperator.ReadToDatabase(taskParams.ParamFactory);
             if (!res.HasError)
             {
                 try
                 {
-                    File.Copy(taskParams.FilePath,
-                        Path.Combine(taskParams.ParsedDir, Path.GetFileName(taskParams.FilePath)), true);
-                    File.Delete(taskParams.FilePath);
+                    File.Copy(taskParams.ParamFactory.Source, 
+                        Path.Combine(taskParams.ParsedDir, Path.GetFileName(taskParams.ParamFactory.Source)), true);
+                    File.Delete(taskParams.ParamFactory.Source);
                 }
                 catch (Exception ex)
                 {
@@ -138,21 +136,21 @@ namespace NAlex.Selling.BL
                 }
 
                 SaleOperator.WriteLog(taskParams.LogFile, "Parsed:");
-                SaleOperator.WriteLog(taskParams.LogFile, taskParams.FilePath);
+                SaleOperator.WriteLog(taskParams.LogFile, taskParams.ParamFactory.Source);
             }
             else
             {
                 SaleOperator.WriteLog(taskParams.LogFile, "NOT PARSED:");
-                SaleOperator.WriteLog(taskParams.LogFile, taskParams.FilePath);
+                SaleOperator.WriteLog(taskParams.LogFile, taskParams.ParamFactory.Source);
                 SaleOperator.WriteLog(taskParams.LogFile, res.Message);
 
                 if (!res.IsIOError)
                 {
                     try
                     {
-                        File.Copy(taskParams.FilePath,
-                            Path.Combine(taskParams.NotParsedDir, Path.GetFileName(taskParams.FilePath)), true);
-                        File.Delete(taskParams.FilePath);
+                        File.Copy(taskParams.ParamFactory.Source,
+                            Path.Combine(taskParams.NotParsedDir, Path.GetFileName(taskParams.ParamFactory.Source)), true);
+                        File.Delete(taskParams.ParamFactory.Source);
                     }
                     catch (Exception ex)
                     {

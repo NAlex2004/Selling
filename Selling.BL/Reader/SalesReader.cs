@@ -20,8 +20,8 @@ namespace NAlex.Selling.BL.Reader
             public static int Product { get { return 2; } }
             public static int Sum { get { return 3; } }
         }
-
-        public void Open(string filePath)
+        
+        public SalesReader (string filePath)
         {
             string fileName = Path.GetFileNameWithoutExtension(filePath);
             if (string.IsNullOrEmpty(fileName))

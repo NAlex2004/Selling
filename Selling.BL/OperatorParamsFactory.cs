@@ -9,9 +9,11 @@ namespace NAlex.Selling.BL
 {
     public class OperatorParamsFactory: IOperatorParamsFactory
     {
+        private string _filePath;
+
         public ISalesReader CreateReader()
         {
-            return new SalesReader();
+            return new SalesReader(_filePath);
         }
 
         public ISalesUnit CreateUnit()
@@ -26,9 +28,16 @@ namespace NAlex.Selling.BL
             protected set;
         }
 
-        public OperatorParamsFactory(int recordsPerPass = 0)
+        public OperatorParamsFactory(string filePath, int recordsPerPass = int.MaxValue)
         {
+            _filePath = filePath;
             RecordsPerPass = recordsPerPass;
+        }
+
+
+        public string Source
+        {
+            get { return _filePath; }
         }
     }
 }
