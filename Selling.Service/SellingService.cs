@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.ServiceProcess;
 using System.Text;
+using NAlex.Selling.BL;
 
 namespace NAlex.Selling.Service
 {
@@ -18,10 +19,22 @@ namespace NAlex.Selling.Service
 
         protected override void OnStart(string[] args)
         {
+            
         }
 
         protected override void OnStop()
         {
+            
+        }
+
+        public void StartInteractive(string[] args)
+        {
+            OnStart(args);
+        }
+
+        public void StopInteractive()
+        {
+            OnStop();
         }
     }
 }
