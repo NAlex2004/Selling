@@ -14,13 +14,13 @@ go
 create table Customers
 (
 	Id int identity primary key,
-	CustomerName varchar(255) not null
+	CustomerName nvarchar(255) not null
 )
 
 create table Products
 (
 	Id int identity primary key,
-	ProductName varchar(255) not null,
+	ProductName nvarchar(255) not null,
 	Price float not null default 0
 )
 
@@ -28,7 +28,7 @@ create table Products
 create table Managers
 (
 	Id int not null identity primary key,
-	LastName varchar(100) not null unique,	
+	LastName nvarchar(100) not null unique,	
 )
 
 create table Sales
@@ -53,9 +53,9 @@ create table TempSales
 	Id int not null identity primary key,
 	SessionId uniqueidentifier not null,
 	SaleDate datetime not null,
-	ManagerName varchar(100) not null,
-	CustomerName varchar(255) not null,
-	ProductName varchar(255) not null,
+	ManagerName nvarchar(100) not null,
+	CustomerName nvarchar(255) not null,
+	ProductName nvarchar(255) not null,
 	Total float not null default 0,	
 )
 

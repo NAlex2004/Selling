@@ -844,3 +844,86 @@ Reason: Строка не распознана как действительно
 [08.06.2017 16:52:12]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Иванов_123 copy.csv
 [08.06.2017 16:52:12]: Data not copied for SessionId 912445b0-9428-438f-8502-8c71d3982a37.
 Нарушение "Un_Sale" ограничения UNIQUE KEY. Невозможно вставить повторяющийся ключ в объект "dbo.Sales".
+[09.06.2017 7:57:32]: NOT PARSED:
+[09.06.2017 7:57:33]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Сидоров_456Error.csv
+[09.06.2017 7:57:33]: Line cannot be parsed..
+Line:  48.12.2015, ИП Сидоров, Лестница, dd21.00
+Reason: Строка не распознана как действительное значение DateTime.
+[09.06.2017 7:57:33]: Parsed:
+[09.06.2017 7:57:33]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Сидоров_123.csv
+[09.06.2017 7:57:33]: Parsed:
+[09.06.2017 7:57:33]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Иванов_456.csv
+[09.06.2017 7:57:33]: Parsed:
+[09.06.2017 7:57:33]: Parsed:
+[09.06.2017 7:57:33]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Иванов_123.csv
+[09.06.2017 7:57:33]: Parsed:
+[09.06.2017 7:57:33]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Иванов_789.csv
+[09.06.2017 7:57:33]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Сидоров_789 как Иванов.csv
+[09.06.2017 7:57:33]: Parsed:
+[09.06.2017 7:57:33]: Parsed:
+[09.06.2017 7:57:33]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Петров_123.csv
+[09.06.2017 7:57:33]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Петров_456.csv
+[09.06.2017 7:57:33]: NOT PARSED:
+[09.06.2017 7:57:33]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Иванов_123 copy.csv
+[09.06.2017 7:57:33]: Data not copied for file Иванов_123 copy.csv .
+Нарушение "Un_Sale" ограничения UNIQUE KEY. Невозможно вставить повторяющийся ключ в объект "dbo.Sales".
+[09.06.2017 8:03:52]: NOT PARSED:
+[09.06.2017 8:03:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Иванов_456.csv
+[09.06.2017 8:03:52]: Data not copied for file Иванов_456.csv .
+Нарушение "Un_Sale" ограничения UNIQUE KEY. Невозможно вставить повторяющийся ключ в объект "dbo.Sales".
+[09.06.2017 8:03:52]: NOT PARSED:
+[09.06.2017 8:03:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Иванов_123 copy.csv
+[09.06.2017 8:03:52]: Data not copied for file Иванов_123 copy.csv .
+Нарушение "Un_Sale" ограничения UNIQUE KEY. Невозможно вставить повторяющийся ключ в объект "dbo.Sales".
+[09.06.2017 8:03:52]: NOT PARSED:
+[09.06.2017 8:03:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Иванов_123.csv
+[09.06.2017 8:03:52]: Data not copied for file Иванов_123.csv .
+Нарушение "Un_Sale" ограничения UNIQUE KEY. Невозможно вставить повторяющийся ключ в объект "dbo.Sales".
+[09.06.2017 8:03:52]: NOT PARSED:
+[09.06.2017 8:03:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Иванов_789.csv
+[09.06.2017 8:03:52]: Data not copied for file Иванов_789.csv .
+Нарушение "Un_Sale" ограничения UNIQUE KEY. Невозможно вставить повторяющийся ключ в объект "dbo.Sales".
+[09.06.2017 8:03:52]: NOT PARSED:
+[09.06.2017 8:03:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Сидоров_789 как Иванов.csv
+[09.06.2017 8:03:52]: Data not copied for file Сидоров_789 как Иванов.csv .
+Нарушение "Un_Sale" ограничения UNIQUE KEY. Невозможно вставить повторяющийся ключ в объект "dbo.Sales".
+[09.06.2017 8:03:52]: NOT PARSED:
+[09.06.2017 8:03:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Петров_123.csv
+[09.06.2017 8:03:52]: Data not copied for file Петров_123.csv .
+Нарушение "Un_Sale" ограничения UNIQUE KEY. Невозможно вставить повторяющийся ключ в объект "dbo.Sales".
+[09.06.2017 8:03:52]: NOT PARSED:
+[09.06.2017 8:03:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Сидоров_456Error.csv
+[09.06.2017 8:03:52]: Line cannot be parsed..
+Line:  48.12.2015, ИП Сидоров, Лестница, dd21.00
+Reason: Строка не распознана как действительное значение DateTime.
+[09.06.2017 8:03:52]: NOT PARSED:
+[09.06.2017 8:03:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Петров_456.csv
+[09.06.2017 8:03:52]: Data not copied for file Петров_456.csv .
+Нарушение "Un_Sale" ограничения UNIQUE KEY. Невозможно вставить повторяющийся ключ в объект "dbo.Sales".
+[09.06.2017 8:03:52]: NOT PARSED:
+[09.06.2017 8:03:52]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Сидоров_123.csv
+[09.06.2017 8:03:52]: Data not copied for file Сидоров_123.csv .
+Нарушение "Un_Sale" ограничения UNIQUE KEY. Невозможно вставить повторяющийся ключ в объект "dbo.Sales".
+[09.06.2017 8:05:49]: Parsed:
+[09.06.2017 8:05:49]: Parsed:
+[09.06.2017 8:05:49]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Сидоров_789 как Иванов.csv
+[09.06.2017 8:05:49]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Иванов_456.csv
+[09.06.2017 8:05:49]: Parsed:
+[09.06.2017 8:05:49]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Иванов_789.csv
+[09.06.2017 8:05:49]: Parsed:
+[09.06.2017 8:05:49]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Иванов_123 copy.csv
+[09.06.2017 8:05:49]: Parsed:
+[09.06.2017 8:05:49]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Петров_123.csv
+[09.06.2017 8:05:49]: NOT PARSED:
+[09.06.2017 8:05:49]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Иванов_123.csv
+[09.06.2017 8:05:49]: Data not copied for file Иванов_123.csv .
+Нарушение "Un_Sale" ограничения UNIQUE KEY. Невозможно вставить повторяющийся ключ в объект "dbo.Sales".
+[09.06.2017 8:05:49]: NOT PARSED:
+[09.06.2017 8:05:49]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Сидоров_456Error.csv
+[09.06.2017 8:05:49]: Line cannot be parsed..
+Line:  48.12.2015, ИП Сидоров, Лестница, dd21.00
+Reason: Строка не распознана как действительное значение DateTime.
+[09.06.2017 8:05:49]: Parsed:
+[09.06.2017 8:05:49]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Петров_456.csv
+[09.06.2017 8:05:49]: Parsed:
+[09.06.2017 8:05:49]: E:\My\Private\CS\Training\Selling\TempTest\CSV\Сидоров_123.csv
