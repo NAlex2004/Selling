@@ -25,7 +25,7 @@ namespace NAlex.Selling.Service
 			}
 			else // консольное
 			{
-                Console.WriteLine("Any key to stop.");
+                Console.WriteLine("Running as application. Any key to stop.");
                 using (SellingService service = new SellingService())
                 {
                     service.StartInteractive(args);
