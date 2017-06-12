@@ -45,11 +45,7 @@ namespace NAlex.Selling.DAL.Repositories
                         _context.Entry<Manager>(man).State = EntityState.Detached;
                 }                
 
-                // ищем в базе
-                //var customer = _context.Set<Customer>()
-                //    .UseAsDataSource().For<CustomerDTO>()
-                //    .FirstOrDefault(c => c.Equals(entity.Customer));                
-
+                // ищем в базе           
                 var customer = _context.Set<Customer>().FirstOrDefault(c => c.CustomerName == entity.Customer.CustomerName);
                 if (customer != null)
                 {
@@ -57,7 +53,6 @@ namespace NAlex.Selling.DAL.Repositories
                     sale.Customer = null;
                 }
 
-                //var product = _context.Set<Product>().FirstOrDefault(c => Mapper.Map<ProductDTO>(c).Equals(entity.Product));
                 var product = _context.Set<Product>().FirstOrDefault(p => p.ProductName == entity.Product.ProductName);
                 if (product != null)
                 {
