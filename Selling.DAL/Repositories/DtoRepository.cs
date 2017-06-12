@@ -37,8 +37,8 @@ namespace NAlex.Selling.DAL.Repositories
             return _context.Set<TEntity>().UseAsDataSource().For<TDto>().ToArray();
         }
 
-        public virtual IEnumerable<TDto> Get(System.Linq.Expressions.Expression<Func<TDto, bool>> condition,
-            Func<IQueryable<TDto>, IOrderedQueryable<TDto>> orderBy = null)
+        public virtual IEnumerable<TDto> Get(Func<TDto, bool> condition,
+            Func<IEnumerable<TDto>, IOrderedEnumerable<TDto>> orderBy = null)
         {
             var q = _context.Set<TEntity>().UseAsDataSource().For<TDto>().Where(condition);
 
@@ -77,13 +77,13 @@ namespace NAlex.Selling.DAL.Repositories
             _context.Entry<TEntity>(newEntity).State = EntityState.Deleted;
         }
 
-        public virtual void Remove(Expression<Func<TDto, bool>> condition)
+        public virtual void Remove(Func<TDto, bool> condition)
         {
-            Expression<Func<TEntity, bool>> exp = Mapper.Map<Expression<Func<TEntity, bool>>>(condition);
-            _context.Set<TEntity>().Local.Where(exp.Compile())
+            Func<TEntity, bool> fun = Mapper.Map<Func<TEntity, bool>>(condition);
+            _context.Set<TEntity>().Local.Where(fun)
                 .ToList()
                 .ForEach(e => _context.Entry<TEntity>(e).State = EntityState.Detached);
-            _context.Set<TEntity>().Where(exp)
+            _context.Set<TEntity>().Where(fun)
                 .ToList()
                 .ForEach(e => _context.Set<TEntity>().Remove(e));
         }
